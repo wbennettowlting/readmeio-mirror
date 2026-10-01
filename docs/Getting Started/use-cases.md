@@ -5,30 +5,40 @@ metadata:
 x-privacy:
   view: public
 ---
-If your business involves **stablecoin-to-fiat** / **fiat-to-stablecoin** transactions, you may face challenges such as **compliance**, **liquidity**, and **payment integration**. Our infrastructure is designed to solve these problems, enabling you to provide a smooth on/off-ramp experience for your users. Whether you are a **wallet service provider**, **e-commerce platform**, or **financial institution**, our solution allows you to integrate fiat-to-crypto conversion effortlessly, ensuring a frictionless user experience.
+If your business involves **stablecoin-to-fiat** or **fiat-to-stablecoin** transactions, Harbor provides the infrastructure to handle the **underlying compliance, liquidity, customer onboarding, and payment rails** required to support these flows.
 
-### Real-World Payment Scenarios
+Through Harbor, you can onboard both **individuals and businesses**, while **Harbor handles the required KYC for individuals and KYB for businesses**. Once customers are onboarded, you can **create quotes, execute transfers, and receive transfer updates through webhooks**, without having to build and manage these underlying services yourself.
 
-Across the transfers processed on OwlPay Harbor, the majority are **crypto-to-fiat payouts** (stablecoins converted to local currency, settled to a bank account), with a smaller share being fiat-to-crypto on-ramps and on-chain stablecoin swaps. Payments settle to bank accounts across North America, Europe, the Middle East, and Asia, in both USD and local currencies.
+Harbor can be integrated into a range of products and workflows, including **wallets, payment platforms, and financial services**, allowing you to focus on your customer experience while Harbor handles the underlying infrastructure.
 
-The most common reasons end-users move money through the platform, and the type of recipient typically on the other end:
 
-* **Logistics & Freight Payments** — Businesses paying for shipping, freight forwarding, and transportation services. Recipients are typically **logistics and freight forwarding companies**.
-* **Family Remittances** — Individuals sending money to family members abroad for living expenses. Recipients are **individuals**.
-* **Cross-Border Trade & Exported Goods** — Payments settling invoices for goods that were exported or imported between countries. Recipients are typically **import/export trading companies and manufacturers**.
-* **Information & Digital Services** — Payments for information services, SaaS, and other digital service subscriptions. Recipients are typically **technology and information service providers**.
-* **General Goods Purchases** — Payments for offline/in-person goods purchases. Recipients are typically **retail and wholesale merchants**.
-* **Broker & Advisory Fees** — Payments to brokers, consultants, and financial advisors for professional services rendered. Recipients are typically **financial services, brokerage, and consulting firms**.
-* **Insurance Premiums & Claims** — Premium payments and indemnity payouts tied to insurance products. Recipients are typically **insurance companies**.
-* **Payroll & Salary** — Cross-border salary payments to individual employees or contractors. Recipients are **individuals**.
-* **Self-Custody Transfers** — Users moving their own funds between a self-custodied crypto wallet and their own bank account.
 
-This range reflects why our infrastructure is built to support both **B2B trade settlement** and **person-to-person remittance** flows, each with different compliance, payout-speed, and recipient-verification requirements — all handled through the same API.
+### Applications
 
-***
+#### Wallets & Financial Platforms
 
-<Callout icon="🤝" theme="info">
-  **Ready to get started?**
+Enable users to move funds between stablecoins and fiat, including on-ramp and off-ramp transfers to and from bank accounts.
 
-  If you're looking for a reliable and efficient on/off-ramp solution for your business, contact us at [contact-us@owlting.com](mailto:contact-us@owlting.com) to explore partnership opportunities.
-</Callout>
+#### E-Commerce & Payment Platforms
+
+Enable businesses and their customers to send and receive payments using stablecoins and fiat currencies across supported payment rails.
+
+#### Financial Institutions
+
+Integrate stablecoin and fiat transfer capabilities into existing financial products and customer workflows.
+
+### Transfer Use Cases
+
+Harbor supports a range of real-world payment flows, including:
+
+* **Logistics & Freight Payments**
+* **Family Remittances**
+* **Cross-Border Trade & Exported Goods**
+* **Information & Digital Services**
+* **General Goods Purchases**
+* **Broker & Advisory Fees**
+* **Insurance Premiums & Claims**
+* **Payroll & Salary**
+* **Self-Custody Transfers**
+
+These use cases span **B2B payments, cross-border trade, consumer remittances, and self-custody transfers**, all supported through the same Harbor infrastructure and API.
