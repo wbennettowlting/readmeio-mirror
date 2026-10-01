@@ -20,4 +20,4 @@ x-slug: onboarding-v2
   </Card>
 </Cards>
 
-Onboarding a business, or verifying an individual in a single call? See [Onboarding (V1) (Standard)](doc:onboarding-v1).
+Onboarding a business, or verifying an individual in a single call? See [**Onboarding (V1) (Standard)**](/docs/onboarding-v1).

@@ -11,7 +11,7 @@ Convert stablecoin (e.g., USDC) into fiat currency (e.g., USD, HKD) and deliver 
 <Callout icon="👉" theme="info">
 
 **Direct API Reference:**
-* [API Reference: Create a Transfer (V2)](doc:createatransferv2)
+* [API Reference: Create a Transfer (V2)](/reference/createatransferv2)
 
 </Callout>
 

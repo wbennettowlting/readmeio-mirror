@@ -20,7 +20,7 @@ The Harbor Customers API allows you to get KYC link for Customer, enabling you t
 <Callout icon="👉" theme="info">
 
 **Direct API Reference:**
-* [API Reference: Create a Customer](doc:createacustomer)
+* [API Reference: Create a Customer](/reference/createacustomer)
 
 </Callout>
 
@@ -124,6 +124,6 @@ After creating a **Customer**, **Application** must provide the **Customer's Agr
 
 ### KYC
 
-Once a **Customer** submits their **KYC data**, the **Application** can refer to the following status flow diagram to understand the current review status. For a detailed explanation of each status, please refer to [Status](doc:status-definitions) .
+Once a **Customer** submits their **KYC data**, the **Application** can refer to the following status flow diagram to understand the current review status. For a detailed explanation of each status, please refer to [**Status**](/docs/status-definitions) .
 
 <Image align="center" border={true} caption="Customer KYC status change diagram" src="https://files.readme.io/6d124f9016e0d0131981a451bccb9a67c7b1a8a816ca1a3965442d29be1a2fa2-Customer_Status.jpg" width="200px" />

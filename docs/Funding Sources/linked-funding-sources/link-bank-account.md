@@ -247,7 +247,7 @@ The response includes quotes for multiple payment methods. Select the item where
 Use the `clbacc_` ID from Step 2 and the `quote_id` from Step 3 to create the transfer.
 
 <Callout icon="⏳" theme="info">
-  **Settlement Time Notice:** ACH Pull transfers typically settle in **T+2** business days. For more details on fund availability and payment locks, see [Settlement and Payment Lock Time](settlement-and-payment-lock-time).
+  **Settlement Time Notice:** ACH Pull transfers typically settle in **T+2** business days. For more details on fund availability and payment locks, see [**Settlement and Payment Lock Time**](/docs/payment-lock-time).
 </Callout>
 
 ##### Request

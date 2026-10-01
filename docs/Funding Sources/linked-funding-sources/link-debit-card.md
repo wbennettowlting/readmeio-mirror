@@ -70,7 +70,7 @@ sequenceDiagram
 3. The Customer has completed bank compliance onboarding (CRB Bank Onboarding status: `ONBOARDED`)
 
 <Callout icon="📋" theme="info">
-  **Support Coverage Notice:** Before integrating, please review the eligible card types, network brands, and countries in the [Debit Card Support Coverage](/docs/debit-card-coverage) guide. Note that credit cards are not supported.
+  **Support Coverage Notice:** Before integrating, please review the eligible card types, network brands, and countries in the [**Debit Card Support Coverage**](/docs/debit-card-coverage) guide. Note that credit cards are not supported.
 </Callout>
 
 ### Flow Overview
@@ -292,7 +292,7 @@ The response includes quotes for multiple payment methods. Select the item where
 Use the `card_` ID from Step 2 and the `quote_id` from Step 3 to create the transfer.
 
 <Callout icon="⏳" theme="info">
-  **Settlement Time Notice:** Debit Card transfers typically settle in **T+1** business days. For more details on fund availability and payment locks, see [Settlement and Payment Lock Time](settlement-and-payment-lock-time).
+  **Settlement Time Notice:** Debit Card transfers typically settle in **T+1** business days. For more details on fund availability and payment locks, see [**Settlement and Payment Lock Time**](/docs/payment-lock-time).
 </Callout>
 
 #### Request

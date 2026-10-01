@@ -22,16 +22,16 @@ x-privacy:
 ---
 This guide provides a comprehensive overview and API reference for managing webhook subscriptions. Developers can use the provided API endpoints to:
 
-* [List all notification subscriptions:](doc:subscription-apis#list-all-notification-subscriptions) Retrieve a list of all active webhook subscriptions, including their unique identifiers, endpoints, enabled status, and the types of notifications they receive.
-* [Create a webhook subscription](doc:subscription-apis#create-a-webhook-subscription): Establish new webhook subscriptions by specifying an endpoint URL and the desired notification types (e.g., all events denoted by *).
-* [Get a notification subscription](doc:subscription-apis#get-a-notification-subscription): Fetch detailed information about a specific webhook subscription using its unique identifier.
-* [Update a notification subscription](doc:subscription-apis#update-a-notification-subscription): Modify existing webhook subscriptions, such as changing their name or enabling/disabling them.
-* [Delete a notification subscription](doc:subscription-apis#delete-a-notification-subscription): Remove a webhook subscription using its unique identifier.
+* [**List all notification subscriptions:**](/docs/subscription-apis#list-all-notification-subscriptions) Retrieve a list of all active webhook subscriptions, including their unique identifiers, endpoints, enabled status, and the types of notifications they receive.
+* [**Create a webhook subscription**](/docs/subscription-apis#create-a-webhook-subscription): Establish new webhook subscriptions by specifying an endpoint URL and the desired notification types (e.g., all events denoted by *).
+* [**Get a notification subscription**](/docs/subscription-apis#get-a-notification-subscription): Fetch detailed information about a specific webhook subscription using its unique identifier.
+* [**Update a notification subscription**](/docs/subscription-apis#update-a-notification-subscription): Modify existing webhook subscriptions, such as changing their name or enabling/disabling them.
+* [**Delete a notification subscription**](/docs/subscription-apis#delete-a-notification-subscription): Remove a webhook subscription using its unique identifier.
 
 <Callout icon="👉" theme="info">
 
 **Direct API Reference:**
-* [API Reference: Webhook Subscriptions](doc:createawebhooksubscription)
+* [API Reference: Webhook Subscriptions](/reference/createawebhooksubscription)
 
 </Callout>
 

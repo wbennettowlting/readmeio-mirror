@@ -12,7 +12,7 @@ x-privacy:
 | -------------------------------- | -------------------------------------------------------------------------------------------------------------- |
 | `*`                              | Subscribe to all available event types. Harbor will send every event notification supported by the system.     |
 | `bank_account.*`                 | Subscribe to all bank account-related events.                                                                  |
-| `bank_account.micro_deposit.received` | Fired when an account-verification micro-deposit (under US$1.00) is received on a deposit account issued to you. It does **not** create an ON_RAMP transfer and is not converted. See [Account-verification micro-deposits](doc:micro-deposit-verification). |
+| `bank_account.micro_deposit.received` | Fired when an account-verification micro-deposit (under US$1.00) is received on a deposit account issued to you. It does **not** create an ON_RAMP transfer and is not converted. See [**Account-verification micro-deposits**](/docs/micro-deposit-verification). |
 | `customer.*`                     | Subscribe to all customer-related events.                                                                      |
 | `customer.agreement.accepted`    | Fired when a customer has successfully signed and accepted the required terms or service agreement.            |
 | `customer.kyc.verifying`         | The customer has submitted KYC information and verification is in progress.                                    |

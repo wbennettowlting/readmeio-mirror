@@ -20,7 +20,7 @@ The Quote API is responsible for:
 <Callout icon="👉" theme="info">
 
 **Direct API Reference:**
-* [API Reference: Create a Transfer Quote (V2)](doc:createatransferquotev2)
+* [API Reference: Create a Transfer Quote (V2)](/reference/createatransferquotev2)
 
 </Callout>
 

@@ -1,5 +1,5 @@
 ---
-hidden: true
+hidden: false
 title: Overview (New)
 x-content:
   excerpt: Welcome to the Harbor API documentation

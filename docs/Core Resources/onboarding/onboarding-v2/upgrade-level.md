@@ -149,4 +149,4 @@ Upgrade requests may return `409 Conflict` (due to the customer's current onboar
 
 > 📘 Consolidated Error Code Reference
 > 
-> For the full list of numeric error codes and their definitions across the whole API, please refer to the **[Error Codes](doc:error-codes)** guide.
+> For the full list of numeric error codes and their definitions across the whole API, please refer to the [**Error Codes**](/docs/error-codes) guide.

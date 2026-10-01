@@ -33,7 +33,7 @@ When collecting individual onboarding data, some fields (such as occupations, co
 
 Before presenting your UI or submitting onboarding data, you must query the corresponding lookup endpoints to get the valid options and validation requirements.
 
-Please refer to the complete **[Onboarding Meta APIs](doc:onboarding-lookups)** guide for details.
+Please refer to the complete [**Onboarding Meta APIs**](/docs/onboarding-lookups) guide for details.
 
 ***
 

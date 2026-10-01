@@ -14,7 +14,7 @@ Harbor's **Graded Onboarding (V2)** provides a frictionless, step-by-step verifi
 <Callout icon="🚧" theme="warn">
   ### Required Step: Customer Creation First
 
-  Before calling any Graded Onboarding (V2) endpoints, you **must first create an individual customer** object with `type: "individual"` via `POST /api/v1/customers`. This returns the `customer_uuid` used as the path parameter in all onboarding APIs. Please refer to our detailed **[Customer](doc:customers)** guide for creation request and response details.
+  Before calling any Graded Onboarding (V2) endpoints, you **must first create an individual customer** object with `type: "individual"` via `POST /api/v1/customers`. This returns the `customer_uuid` used as the path parameter in all onboarding APIs. Please refer to our detailed [**Customer**](/docs/customers) guide for creation request and response details.
 </Callout>
 
 <Callout icon="💡" theme="default">
@@ -22,7 +22,7 @@ Harbor's **Graded Onboarding (V2)** provides a frictionless, step-by-step verifi
 
   You can onboard a customer **directly into Level 2** in your initial submission. There is no requirement to start with Level 1 or onboard sequentially; if your customer has all documentation ready, you can submit Level 2 onboarding directly.
 
-  Level 3 cannot be applied for directly, and `kyc_level: 3` is not an accepted value here. Level 3 is reached only by upgrading from an approved Level 2 — see **[Upgrade Tier](doc:upgrade-level)**.
+  Level 3 cannot be applied for directly, and `kyc_level: 3` is not an accepted value here. Level 3 is reached only by upgrading from an approved Level 2 — see [**Upgrade Tier**](/docs/upgrade-level).
 </Callout>
 
 <Cards columns="3">
@@ -64,7 +64,7 @@ Before integrating, determine which onboarding flow is right for your applicatio
 <Callout icon="📘" theme="info">
   ### Looking for Standard Onboarding (V1)?
 
-  If your individual customer is using the Standard (V1) scheme, or you prefer a single-call full verification flow, please refer to the **[Onboard Individual via API](doc:onboard-individual)** guide instead.
+  If your individual customer is using the Standard (V1) scheme, or you prefer a single-call full verification flow, please refer to the [**Onboard Individual via API**](/docs/onboard-individual) guide instead.
 </Callout>
 
 ***
@@ -76,7 +76,7 @@ The Graded Onboarding flow assigns individual customers to one of three progress
 <Callout icon="📘" theme="info">
   ### Detailed Level & Limits Guide
 
-  For a comprehensive breakdown of each onboarding level's requirements, exact transaction limit rules, and restricted payment methods (such as the Level 1 trial allowance and Debit Card limitations), please refer to the **[Customer Level](doc:customer-levels)** guide.
+  For a comprehensive breakdown of each onboarding level's requirements, exact transaction limit rules, and restricted payment methods (such as the Level 1 trial allowance and Debit Card limitations), please refer to the [**Customer Level**](/docs/customer-levels) guide.
 </Callout>
 
 ***
@@ -85,9 +85,9 @@ The Graded Onboarding flow assigns individual customers to one of three progress
 
 To avoid duplicate configurations, please refer to our standard integration guidelines:
 
-* **Environments & Authentication:** See **[Authentication](doc:authentication)** for Base URLs, authentication headers (`X-API-KEY`), and the `Idempotency-Key` requirement.
-* **Customer Creation:** Before calling any Graded Onboarding endpoint, you must first create an individual customer with `type: "individual"`. Please refer to our detailed **[Customer](doc:customers)** guide for request and response examples for `POST /api/v1/customers`.
-* **Reference-Data Lookups:** Some input fields (such as state codes, occupations, and identity document types) only accept dynamically validated options, and guessing them does not work. Call the lookup APIs documented in **[Onboarding Meta APIs](doc:onboarding-lookups)**:
+* **Environments & Authentication:** See [**Authentication**](/docs/authentication) for Base URLs, authentication headers (`X-API-KEY`), and the `Idempotency-Key` requirement.
+* **Customer Creation:** Before calling any Graded Onboarding endpoint, you must first create an individual customer with `type: "individual"`. Please refer to our detailed [**Customer**](/docs/customers) guide for request and response examples for `POST /api/v1/customers`.
+* **Reference-Data Lookups:** Some input fields (such as state codes, occupations, and identity document types) only accept dynamically validated options, and guessing them does not work. Call the lookup APIs documented in [**Onboarding Meta APIs**](/docs/onboarding-lookups):
 
   * `GET /api/v2/customers/individual/occupations`
   * `GET /api/v2/customers/individual/countries/{country}/subdivisions`
@@ -195,7 +195,7 @@ Response: **202 Accepted** with a status of `processing`.
 **Notes on this payload**
 
 * `residence.state` must be **omitted** outside the US. It is rejected, not merely optional.
-* Send `tax_id`, not `ssn`. Sending `ssn` for a non-US residence is rejected — see **[Customer Level](doc:customer-levels)** for the full tax-identifier rules.
+* Send `tax_id`, not `ssn`. Sending `ssn` for a non-US residence is rejected — see [**Customer Level**](/docs/customer-levels) for the full tax-identifier rules.
 
 <Callout icon="📘" theme="info">
   ### Accepted Values for Fixed-Choice Fields
@@ -272,7 +272,7 @@ We strongly recommend subscribing to the following webhook events to track real-
 
 The event prefix is `customer_onboarding.` with an underscore — it is deliberately distinct from the `customer.*` events. There is no `customer_onboarding.rejected` event; a correctable rejection is announced as `customer_onboarding.action_required`, and a final one as `customer_onboarding.declined`.
 
-For setup, see **[Webhook Subscription](doc:subscription-apis)**.
+For setup, see [**Webhook Subscription**](/docs/subscription-apis).
 
 ***
 

@@ -3,7 +3,7 @@ title: Overview
 excerpt: The main building blocks of a Harbor integration and how they fit together.
 hidden: false
 ---
-Core Resources covers the main objects of the Harbor API in depth: their fields, the API operations available for each, and how they connect. If you're new to Harbor, start with the [Quickstart](/docs/quickstart) first.
+Core Resources covers the main objects of the Harbor API in depth: their fields, the API operations available for each, and how they connect. If you're new to Harbor, start with the [**Quickstart**](/docs/quickstart) first.
 
 A typical integration uses these resources in order:
 

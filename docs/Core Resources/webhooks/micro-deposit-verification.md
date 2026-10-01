@@ -48,7 +48,7 @@ The email shows the amount, the sender's descriptor and a masked account number 
 
 ### Payload
 
-The full payload, field types and handling notes live with the other event payloads: [Webhook payload example](doc:payload-examples).
+The full payload, field types and handling notes live with the other event payloads: [**Webhook payload example**](/docs/payload-examples).
 
 Subscribe with `bank_account.micro_deposit.received`, or the wildcard `bank_account.*`. Subscribing to `deposit_account.*` does **not** deliver this event.
 

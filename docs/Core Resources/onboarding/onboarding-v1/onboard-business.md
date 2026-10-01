@@ -33,7 +33,7 @@ When collecting business onboarding data, some fields (such as industries, job t
 
 Before presenting your UI or submitting the corporate onboarding payload, you must query the corresponding lookup endpoints to get the valid options.
 
-Please refer to the complete **[Onboarding Meta APIs](doc:onboarding-lookups)** guide for details.
+Please refer to the complete [**Onboarding Meta APIs**](/docs/onboarding-lookups) guide for details.
 
 ***
 

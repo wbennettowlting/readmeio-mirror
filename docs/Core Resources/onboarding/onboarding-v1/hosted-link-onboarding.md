@@ -101,4 +101,4 @@ The user is guided through:
 Once the user completes the hosted flow, the onboarding status becomes `submitted` and then transitions to either `verified` or `rejected` / `action_required`.
 
 - Track this using Webhooks or GET polling.
-- See the [Customer Onboarding Overview](/docs/onboarding) page for details on status tracking, statuses, and webhook formats.
+- See the [**Customer Onboarding Overview**](/docs/onboarding) page for details on status tracking, statuses, and webhook formats.

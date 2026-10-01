@@ -15,7 +15,7 @@ x-privacy:
 ---
 > 📘 Looking for Comparison?
 >
-> To understand the differences in usage and workflow between **Customer Deposit Accounts** and **Narrative-Based Transfers (On-Ramp)**, please refer to our comparison guide: [Funding Methods: Deposit Accounts vs. Narrative-Based Transfers](doc:deposit-accounts-vs-narrative-transfers).
+> To understand the differences in usage and workflow between **Customer Deposit Accounts** and **Narrative-Based Transfers (On-Ramp)**, please refer to our comparison guide: [**Funding Methods: Deposit Accounts vs. Narrative-Based Transfers**](/docs/deposit-accounts-vs-narrative-transfers).
 
 The **Customer's Deposit Account** feature allows you to provision dedicated, virtual fiat bank accounts for your verified customers. This acts as an asynchronous **fiat-to-crypto on-ramp** service.
 
@@ -27,7 +27,7 @@ When a customer transfers fiat currency (via USD ACH Push or USD Wire Transfer) 
 <Callout icon="👉" theme="info">
 
 **Direct API Reference:**
-* [API Reference: Create a Deposit Account](doc:createadepositaccount)
+* [API Reference: Create a Deposit Account](/reference/createadepositaccount)
 
 </Callout>
 
@@ -76,7 +76,7 @@ This includes:
 ### 💻 Step-by-Step API Walkthrough
 
 #### Step 1: Create a Customer
-Before creating a deposit account, you must have a verified customer in the system. If you haven't created one, refer to [Create a Customer](doc:customers).
+Before creating a deposit account, you must have a verified customer in the system. If you haven't created one, refer to [**Create a Customer**](/docs/customers).
 
 #### Step 2: Create a Deposit Account
 Create a dedicated deposit account for the customer. Currently `source_country` must be `US`. `destination.asset` is optional and defaults to `USDC`, which is the only asset supported today.
@@ -84,7 +84,7 @@ Create a dedicated deposit account for the customer. Currently `source_country` 
 > 💡 **Commission Fee Support**
 > 
 > Deposit Accounts support setting a **Commission Fee** (which will be deducted automatically from the incoming deposit during auto-conversion and settlement). 
-> For details on how commissions are calculated, what parameters are used, and the differences between Source and Destination Amount models, please refer to the [Commission Fee](doc:commission-fees) guide.
+> For details on how commissions are calculated, what parameters are used, and the differences between Source and Destination Amount models, please refer to the [**Commission Fee**](/docs/commission-fees) guide.
 
 To configure a commission fee on creation, include the `commission` object in the payload as shown below:
 
@@ -171,7 +171,7 @@ Response (HTTP 202 Accepted):
 ```
 
 #### Step 3: Receive Deposit Instructions (via Webhook or Polling)
-Since the deposit account is provisioned asynchronously, you will receive real-time notifications by subscribing to `deposit_account.activated` and `deposit_account.failed`, or to the `deposit_account.*` wildcard (refer to the [Webhook Subscriptions](doc:webhooks) guide).
+Since the deposit account is provisioned asynchronously, you will receive real-time notifications by subscribing to `deposit_account.activated` and `deposit_account.failed`, or to the `deposit_account.*` wildcard (refer to the [**Webhook Subscriptions**](/docs/webhooks) guide).
 
 Alternatively, you can poll the GET endpoint to retrieve the status:
 
@@ -215,7 +215,7 @@ Once active, the `deposit_instructions` field is populated with banking details:
 ```
 
 > 📘 **Account-verification micro-deposits**
-> An outside bank or platform may push a few cents into this account to prove that it exists and belongs to the named holder. Those deposits are **not** on-ramped: no transfer is created, no conversion takes place, no hold is placed, and your balance does not move. You are notified through the [`bank_account.micro_deposit.received`](doc:micro-deposit-verification) webhook instead. Harbor also emails a notification about the deposit — to the Customer holding the account, with your business owner copied.
+> An outside bank or platform may push a few cents into this account to prove that it exists and belongs to the named holder. Those deposits are **not** on-ramped: no transfer is created, no conversion takes place, no hold is placed, and your balance does not move. You are notified through the [**`bank_account.micro_deposit.received`**](/docs/micro-deposit-verification) webhook instead. Harbor also emails a notification about the deposit — to the Customer holding the account, with your business owner copied.
 
 #### Step 4: Retarget or Disable the Account
 If you need to change where the funds are routed (only allowed for `active` status), or permanently close the bank account:
@@ -298,7 +298,7 @@ This triggers the downstream flow: receiving the fiat, initiating a transfer, co
 
 > 🚧 Planned for release in October 2026
 >
-> An `ACH_PUSH` of less than US$1.00 does not simulate a deposit. It is classified as an account-verification micro-deposit, exactly as production would classify it, and delivers [`bank_account.micro_deposit.received`](doc:micro-deposit-verification) instead of creating a transfer. The response reports which path was taken in `classified_as`.
+> An `ACH_PUSH` of less than US$1.00 does not simulate a deposit. It is classified as an account-verification micro-deposit, exactly as production would classify it, and delivers [**`bank_account.micro_deposit.received`**](/docs/micro-deposit-verification) instead of creating a transfer. The response reports which path was taken in `classified_as`.
 
 ---
 

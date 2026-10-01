@@ -11,7 +11,7 @@ Convert fiat currency (e.g., USD) into stablecoin (e.g., USDC) and deliver it to
 <Callout icon="👉" theme="info">
 
 **Direct API Reference:**
-* [API Reference: Create a Transfer (V2)](doc:createatransferv2)
+* [API Reference: Create a Transfer (V2)](/reference/createatransferv2)
 
 </Callout>
 
@@ -417,5 +417,5 @@ curl --location 'https://harbor-sandbox.owlpay.com/api/v2/transfers' \
 
 <Callout icon="💡" theme="info">
 **Sandbox Testing Tip**
-After creating a transfer in the **Sandbox** environment, the status will not transition automatically. Please head over to the [Simulate Status](doc:simulate-transfer-status) guide to learn how to manually trigger state changes for testing.
+After creating a transfer in the **Sandbox** environment, the status will not transition automatically. Please head over to the [**Simulate Status**](/docs/simulate-transfer-status) guide to learn how to manually trigger state changes for testing.
 </Callout>

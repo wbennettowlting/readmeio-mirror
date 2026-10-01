@@ -107,7 +107,7 @@ graph TD
 
 > 📘 Onboarding Lifecycle & Exceptions Playbook
 > 
-> For a highly detailed guide on how to programmatically detect and resolve `action_required` states, handle final `declined` conditions, or manage customer-level Requests for Information (RFIs), please refer directly to the **[Onboarding & RFI Guide](doc:onboarding-rfi)**.
+> For a highly detailed guide on how to programmatically detect and resolve `action_required` states, handle final `declined` conditions, or manage customer-level Requests for Information (RFIs), please refer directly to the [**Onboarding & RFI Guide**](/docs/onboarding-rfi).
 
 ---
 
@@ -143,4 +143,4 @@ When validation or business rules are violated, Harbor returns standard validati
 
 > 📘 Consolidated Error Code Reference
 > 
-> For a comprehensive table of all onboarding, validation, upgrade conflict, and gateway middleware error codes, please refer directly to the **[Error Codes](doc:error-codes)** guide.
+> For a comprehensive table of all onboarding, validation, upgrade conflict, and gateway middleware error codes, please refer directly to the [**Error Codes**](/docs/error-codes) guide.

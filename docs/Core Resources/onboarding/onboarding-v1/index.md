@@ -19,4 +19,4 @@ Choose how you want to collect your customers' information:
   </Card>
 </Cards>
 
-Looking for progressive, tier-based verification for individual customers? See [Onboarding (V2) (Graded)](doc:onboarding-v2).
+Looking for progressive, tier-based verification for individual customers? See [**Onboarding (V2) (Graded)**](/docs/onboarding-v2).

@@ -33,12 +33,12 @@ Harbor supports two ways for your customers to fund on-ramp transfers directly f
 | **Settlement Period**  | T+2 (Business Days)             | T+1 (Business Day)                             |
 
 <Callout icon="📋" theme="info">
-  For the complete list of supported card networks, card types, and country coverage, please refer to the [Debit Card Support Coverage](/docs/debit-card-coverage) guide.
+  For the complete list of supported card networks, card types, and country coverage, please refer to the [**Debit Card Support Coverage**](/docs/debit-card-coverage) guide.
 </Callout>
 
 ### Settlement & Payment Lock Time
 
-Transfers initiated from linked funding sources are subject to settlement periods and payment lock times. For detailed information on how this affects your funds availability, please refer to the [Settlement & Payment Lock Time](/docs/payment-lock-time) guide.
+Transfers initiated from linked funding sources are subject to settlement periods and payment lock times. For detailed information on how this affects your funds availability, please refer to the [**Settlement & Payment Lock Time**](/docs/payment-lock-time) guide.
 
 ### Prerequisites
 

@@ -21,7 +21,7 @@ Due to compliance requirements, **Harbor** requires Applications to provide **Cu
 >
 > If you are a application that also wants to perform payments, please onboard yourself as a Customer and pass the parameters to `business` to get the KYB form.
 
-Once a **Customer** submits their **KYC data**, the **Application** can refer to the following status flow diagram to understand the current review status. For a detailed explanation of each status, please refer to [Status](doc:status-definitions) .
+Once a **Customer** submits their **KYC data**, the **Application** can refer to the following status flow diagram to understand the current review status. For a detailed explanation of each status, please refer to [**Status**](/docs/status-definitions) .
 
 <Image align="center" border={true} caption="Customer KYC status change diagram" src="https://files.readme.io/6d124f9016e0d0131981a451bccb9a67c7b1a8a816ca1a3965442d29be1a2fa2-Customer_Status.jpg" width="200px" />
 
@@ -109,6 +109,6 @@ To start transferring funds (on-ramp or off-ramp) once your customer is approved
 
 For a complete step-by-step walkthrough of creating quotes and executing transactions—including USD and non-USD local currency settlements (such as HKD, SGD, MXN, BRL, and more)—please refer directly to our comprehensive transfer guide:
 
-👉 [Transfers with Local Currency (Off-ramp Outside the United States)](doc:local-currency-transfers)
+👉 [**Transfers with Local Currency (Off-ramp Outside the United States)**](/docs/local-currency-transfers)
 
 Congratulations! You have successfully registered your first customer and are ready to move assets globally 🚀.

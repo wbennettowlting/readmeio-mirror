@@ -15,7 +15,7 @@ You create a Subscription with a target HTTPS endpoint and a list of Event Types
 
 ### Quick Start:
 
-1. [Subscription APIs](doc:subscription-apis)
-2. [List of subscribing events](doc:subscribable-events) 
-3. How to verify the request from Harbor - [Verifying requests from Harbor](doc:verify-signatures)
-4. Webhook Payload Example - [Webhook payload example](doc:payload-examples)
+1. [**Subscription APIs**](/docs/subscription-apis)
+2. [**List of subscribing events**](/docs/subscribable-events) 
+3. How to verify the request from Harbor - [**Verifying requests from Harbor**](/docs/verify-signatures)
+4. Webhook Payload Example - [**Webhook payload example**](/docs/payload-examples)
