@@ -1,12 +1,15 @@
 ---
-title: Overview (new)
+hidden: true
+title: Overview (New)
 x-content:
   excerpt: Welcome to the Harbor API documentation
 metadata:
   robots: index
 x-privacy:
-  view: hidden
+  view: public
+
 ---
+### Introduction
 
 Welcome to the Harbor API documentation.
 
