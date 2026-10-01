@@ -1,0 +1,5 @@
+- retrieveallapplicationrecipients
+- createanapplicationrecipient
+- updateanapplicationrecipient
+- deleteanapplicationrecipient
+- retrieveanapplicationlevelrecipientbyuuid

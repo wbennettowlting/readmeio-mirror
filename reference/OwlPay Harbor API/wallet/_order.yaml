@@ -1,0 +1,7 @@
+- listwallets
+- createawallet
+- getawallet
+- updateawallet
+- deleteawallet
+- listrecordsofawallet
+- listbalancesofawallet

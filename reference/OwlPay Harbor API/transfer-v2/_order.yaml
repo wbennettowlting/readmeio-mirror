@@ -1,0 +1,12 @@
+- listalltransfersv2
+- createatransferv2
+- retrieveatransferv2
+- createatransferquotev2
+- gettransferquoterequirementsv2
+- getdepositsettingsv2
+- getwithdrawalsettingsv2
+- getsupportedsourcecountriesv2
+- getsupportedblockchainsv2
+- gettravelruleschemav2
+- checkrtpsupport
+- reissueanofframpcardbindinglink
