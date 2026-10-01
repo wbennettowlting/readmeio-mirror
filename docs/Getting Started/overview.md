@@ -1,90 +1,43 @@
 ---
+hidden: false
 title: Overview
 x-content:
-  excerpt: Welcome to the Harbor Integration Guide!
+  excerpt: Welcome to the Harbor API documentation
 metadata:
   robots: index
 x-privacy:
   view: public
+
 ---
-This document is designed specifically for **developers**, providing a comprehensive guide to integrate with our API services. It includes instructions for submitting customer information, managing transaction statuses, and more.
+### Introduction
+
+Welcome to the Harbor API documentation.
+
+This guide walks you through the key workflows required to integrate with Harbor. It is designed for both developers building the integration and non-technical users who need to understand how the integration works.
+
+The documentation covers the core steps of the Harbor integration lifecycle, including:
+
+* **Creating customers** and managing their information
+* **Managing customer onboarding**, including KYC and KYB verification
+* **Creating quotes** for transfers
+* **Executing transfers** using the selected quote
+* **Subscribing to webhook notifications** to receive updates on customer, onboarding, and transfer events
+
+Each section explains the relevant API operations, required information, expected responses, and how the different workflows connect together.
 
 
+### Core Resources
 
+If you are already familiar with the Harbor API and have reviewed the documentation, we recommend exploring the [**Core Resources**](/docs/core-resources-overview) section. This section provides an in-depth look at the core components of the Harbor API, including **Customers, Onboarding, Transfers, Webhooks, and Wallets**, with detailed information about their objects, API operations, and workflows.
 
-Contact us to get your API KEY (SANDBOX / PRODUCTION): [contact-us@owlting.com](mailto:contact-us@owlting.com)
+### Environments and Access
 
-<Callout icon="📘" theme="info">
+Harbor provides two environments, **Sandbox** and **Production**, and both are available through the **Harbor Portal** and **Harbor API**.
 
-**API Environments:**
-* **Sandbox:** `https://harbor-sandbox.owlpay.com`
-* **Production:** `https://harbor.owlpay.com`
+The [**Harbor Portal**](/docs/portal) provides a user-friendly interface for managing customers, viewing transfers, and executing transfers directly through the platform. 
 
-</Callout>
+The [**Harbor API**](/docs/api) provides programmatic access to the same Harbor functionality, allowing you to integrate these capabilities into your own applications and systems.
 
+Use the **Sandbox** Portal or API for testing and development, and the **Production** Portal or API for live operations.
 
-
-
-### Customer Management
-
-<Cards>
-  <Card title="Customer Onboarding" href="/docs/onboarding" icon="fa-user-check">
-    Onboard and verify your customers (individual or business profiles) via hosted links or direct API integration.
-  </Card>
-  <Card title="Customer" href="/docs/customers" icon="fa-user">
-    Manage customer data and their verification statuses.
-  </Card>
-  <Card title="Link a Bank Account" href="/docs/link-bank-account" icon="fa-building-columns">
-    Connect and link U.S. bank accounts for ACH Pull transactions.
-  </Card>
-  <Card title="Link a Debit Card" href="/docs/link-debit-card" icon="fa-credit-card">
-    Bind a debit card to purchase cryptocurrency directly.
-  </Card>
-  <Card title="Customer's Deposit Account" href="/docs/deposit-accounts" icon="fa-wallet">
-    Provision dedicated bank accounts for customers to auto-on-ramp fiat to crypto.
-  </Card>
-</Cards>
-
-### Transfer Types
-
-<Cards>
-  <Card title="Get a Quote" href="/docs/quotes" icon="fa-calculator">
-    Get exchange rates, fees, and settlement amounts before creating a transfer.
-  </Card>
-  <Card title="Fiat → Stablecoin" href="/docs/on-ramp" icon="fa-arrow-right">
-    On-ramp: convert fiat currency to stablecoin.
-  </Card>
-
-  <Card title="Stablecoin → Fiat" href="/docs/off-ramp" icon="fa-arrow-left">
-    Off-ramp: convert stablecoin back to fiat currency. Includes transfers with local currency.
-  </Card>
-
-  <Card title="Stablecoin → Stablecoin" href="/docs/on-chain" icon="fa-repeat">
-    On-chain swap between stablecoins.
-  </Card>
-</Cards>
-
-### Reference
-
-<Cards>
-  <Card title="Supported Blockchains & Stablecoins" href="/docs/stablecoins-and-blockchains" icon="fa-cubes">
-    A complete list of blockchain networks and stablecoins supported by Harbor.
-  </Card>
-
-  <Card title="Wallet API" href="/docs/wallets" icon="fa-wallet">
-    Create and manage blockchain wallets for receiving and sending crypto assets.
-  </Card>
-  <Card title="Webhook Subscriptions" href="/docs/webhooks" icon="fa-bell">
-    Subscribe to real-time event notifications for transfers and customers.
-  </Card>
-  <Card title="Status & State Definitions" href="/docs/status-definitions" icon="fa-info-circle">
-    Detailed reference for Customer, Transfer, and Sub-status definitions.
-  </Card>
-  <Card title="Error Codes" href="/docs/error-codes" icon="fa-triangle-exclamation">
-    Reference for onboarding and transfer-related error codes.
-  </Card>
-</Cards>
-
-<br />
-
-Should you have any questions or need assistance, please don't hesitate to contact us at [contact-us@owlting.com](mailto:contact-us@owlting.com).
+To request access to the Harbor Portal and API, please contact [contact-us@owlting.com](mailto:contact-us@owlting.com).
