@@ -2,9 +2,9 @@
 title: Onboarding RFI
 metadata:
   robots: index
-privacy:
+x-privacy:
   view: public
-slug: onboarding-rfi
+x-slug: onboarding-rfi
 ---
 **Customer Onboarding · API (V1) & (V2)**
 

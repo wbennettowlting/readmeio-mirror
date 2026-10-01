@@ -2,7 +2,7 @@
 title: Local Currency Transfers
 metadata:
   robots: index
-privacy:
+x-privacy:
   view: public
 ---
 OwlPay Harbor now supports cross-border transfers to multiple regions worldwide, allowing developers and businesses to easily convert USDC into local currencies and send funds directly to recipients’ bank accounts.

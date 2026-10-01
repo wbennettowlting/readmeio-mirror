@@ -6,7 +6,7 @@ excerpt: >-
   source) about specific events. The destination system "subscribes" to
   particular events, and the source system sends an HTTP request (the webhook)
   to a predefined callback URL whenever those events occur.
-content:
+x-content:
   excerpt: >-
     A webhook subscription is a mechanism that allows one system (the
     destination) to receive automated, real-time HTTP notifications from another
@@ -17,7 +17,7 @@ content:
 hidden: false
 metadata:
   robots: index
-privacy:
+x-privacy:
   view: public
 ---
 This guide provides a comprehensive overview and API reference for managing webhook subscriptions. Developers can use the provided API endpoints to:

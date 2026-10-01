@@ -3,7 +3,7 @@ title: Reconciliation
 hidden: true
 metadata:
   robots: index
-privacy:
+x-privacy:
   view: anyone_with_link
 ---
 In Harbor, a **Reconciliation** object is automatically generated whenever a **Transfer** with a `destination` is successfully paid. A single Reconciliation can include multiple Transfers, making it the central object for settlement and reconciliation processes.

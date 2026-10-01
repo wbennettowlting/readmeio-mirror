@@ -4,7 +4,7 @@ excerpt: >-
   This document describes how to integrate the Debit Card On-Ramp feature via
   the OwlPay Harbor API, allowing your end users to purchase cryptocurrency
   directly using a linked debit card.
-content:
+x-content:
   excerpt: >-
     This document describes how to integrate the Debit Card On-Ramp feature via
     the OwlPay Harbor API, allowing your end users to purchase cryptocurrency
@@ -12,7 +12,7 @@ content:
 hidden: false
 metadata:
   robots: index
-privacy:
+x-privacy:
   view: public
 ---
 <Callout icon="⚠️" theme="warning">

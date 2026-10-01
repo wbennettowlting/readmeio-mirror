@@ -2,7 +2,7 @@
 title: Transfers
 metadata:
   robots: index
-privacy:
+x-privacy:
   view: public
 ---
 ### Transfer API (V2)

@@ -3,7 +3,7 @@ title: Quotes
 hidden: false
 metadata:
   robots: index
-privacy:
+x-privacy:
   view: public
 ---
 ### Overview

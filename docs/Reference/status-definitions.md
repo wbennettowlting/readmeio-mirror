@@ -2,7 +2,7 @@
 title: Status Definitions
 metadata:
   robots: index
-privacy:
+x-privacy:
   view: public
 ---
 ### Status Definitions

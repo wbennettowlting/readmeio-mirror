@@ -3,7 +3,7 @@ title: Withdrawal Settings
 hidden: false
 metadata:
   robots: index
-privacy:
+x-privacy:
   view: public
 ---
 This API allows developers to retrieve the current withdrawal configurations supported for your application. You can use this endpoint to identify supported **currency pairs**, **destination countries**, **types (Individual/Business)**, and their respective **transaction limits**.

@@ -3,7 +3,7 @@ title: On-chain
 hidden: false
 metadata:
   robots: index
-privacy:
+x-privacy:
   view: public
 ---
 Transfer stablecoin (e.g., USDC) from one blockchain to another (e.g., Ethereum → Avalanche) and deliver it to a recipient's wallet on the destination chain.

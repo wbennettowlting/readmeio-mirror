@@ -3,7 +3,7 @@ title: Verify Signatures
 hidden: false
 metadata:
   robots: index
-privacy:
+x-privacy:
   view: public
 ---
 The `harbor-signature` header included in each signed webhook event contains a **timestamp** and **signature**. The timestamp is prefixed by `t=`, and the signature is prefixed by a scheme. The scheme begins with `v`.

@@ -3,7 +3,7 @@ title: Off-ramp
 hidden: false
 metadata:
   robots: index
-privacy:
+x-privacy:
   view: public
 ---
 Convert stablecoin (e.g., USDC) into fiat currency (e.g., USD, HKD) and deliver it to a recipient's bank account.

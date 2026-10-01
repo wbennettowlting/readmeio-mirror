@@ -3,14 +3,14 @@ title: Onboarding Lookups
 excerpt: >-
   Reference lookup endpoints for dynamic validation lists used during customer
   onboarding (individual & business).
-content:
+x-content:
   excerpt: >-
     Reference lookup endpoints for dynamic validation lists used during customer
     onboarding (individual & business).
 hidden: false
 metadata:
   robots: index
-privacy:
+x-privacy:
   view: public
 ---
 When collecting customer onboarding data, several fields require specific, dynamically changing values (such as occupations, industries, states, or required document parts). 

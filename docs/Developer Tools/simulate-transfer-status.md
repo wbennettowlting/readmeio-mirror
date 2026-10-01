@@ -3,14 +3,14 @@ title: Simulate Transfer Status
 excerpt: >-
   Learn how to simulate internal status transitions for testing and sandbox
   purposes.
-content:
+x-content:
   excerpt: >-
     Learn how to simulate internal status transitions for testing and sandbox
     purposes.
 hidden: false
 metadata:
   robots: index
-privacy:
+x-privacy:
   view: public
 ---
 These endpoints are used to simulate internal status transitions for a given `Transfer` object. They are intended for testing and sandbox purposes only.

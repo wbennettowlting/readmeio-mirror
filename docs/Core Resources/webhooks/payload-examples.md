@@ -3,7 +3,7 @@ title: Payload Examples
 hidden: false
 metadata:
   robots: index
-privacy:
+x-privacy:
   view: public
 ---
 When a customer passes KYB/KYC verification, when there is a transfer status update, or when an account-verification micro-deposit lands on one of your deposit accounts, we will send a webhook notification to the server URL you specified. The payload will contain the following data structures:

@@ -3,7 +3,7 @@ title: Wallet Transfers
 hidden: true
 metadata:
   robots: index
-privacy:
+x-privacy:
   view: anyone_with_link
 ---
 <Callout icon="📘" theme="info">

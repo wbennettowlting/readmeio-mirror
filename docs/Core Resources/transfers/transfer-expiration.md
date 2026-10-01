@@ -3,7 +3,7 @@ title: Transfer Expiration
 hidden: false
 metadata:
   robots: index
-privacy:
+x-privacy:
   view: public
 ---
 In Harbor, if the **transfer** has **no funds are received within 72 hours**, the **transfer** will be marked as `expired` and an event will be triggered to notify your server.

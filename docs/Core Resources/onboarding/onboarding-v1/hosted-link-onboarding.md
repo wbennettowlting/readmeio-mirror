@@ -3,7 +3,7 @@ title: Hosted Link Onboarding
 hidden: false
 metadata:
   robots: index
-privacy:
+x-privacy:
   view: public
 ---
 The **Hosted Link Onboarding** is a low-code/no-code onboarding option. Instead of building complex forms to collect customer information and writing code to upload large documents, you can redirect your users directly to Harbor's secure, hosted onboarding pages (`gokyb`/`gokyc`).

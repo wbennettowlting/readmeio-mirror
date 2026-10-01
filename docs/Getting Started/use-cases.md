@@ -2,7 +2,7 @@
 title: Use Cases
 metadata:
   robots: index
-privacy:
+x-privacy:
   view: public
 ---
 If your business involves **stablecoin-to-fiat** / **fiat-to-stablecoin** transactions, you may face challenges such as **compliance**, **liquidity**, and **payment integration**. Our infrastructure is designed to solve these problems, enabling you to provide a smooth on/off-ramp experience for your users. Whether you are a **wallet service provider**, **e-commerce platform**, or **financial institution**, our solution allows you to integrate fiat-to-crypto conversion effortlessly, ensuring a frictionless user experience.

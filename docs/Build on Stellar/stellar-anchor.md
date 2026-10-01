@@ -3,7 +3,7 @@ title: Stellar Anchor
 hidden: false
 metadata:
   robots: index
-privacy:
+x-privacy:
   view: public
 ---
 <Image align="center" border={true} width="300px" src="https://files.readme.io/0baf7a9a2a8952f7e7fd0704d1f759460ded16137e3837c62c80a7db18ec26a8-stellar-logo.png" className="border" />

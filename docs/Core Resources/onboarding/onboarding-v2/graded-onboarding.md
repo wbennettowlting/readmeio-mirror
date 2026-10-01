@@ -1,6 +1,6 @@
 ---
 title: Graded Onboarding
-content:
+x-content:
   excerpt: >-
     Overview of Graded Onboarding (V2) for individual customers, explaining
     levels, initial submissions, statuses, and updates.

@@ -1,12 +1,12 @@
 ---
 title: Testnet Faucet
 excerpt: Claim testnet USDC or USDT on supported blockchains for development and testing.
-content:
+x-content:
   excerpt: Claim testnet USDC or USDT on supported blockchains for development and testing.
 hidden: false
 metadata:
   robots: noindex
-privacy:
+x-privacy:
   view: public
 ---
 **How it works:**

@@ -2,9 +2,9 @@
 title: Onboarding Reference Data
 metadata:
   robots: index
-privacy:
+x-privacy:
   view: public
-slug: onboarding-reference-data
+x-slug: onboarding-reference-data
 ---
 The lists below are provided for convenience so you can quickly build dropdowns and validate input. However, because these lists change over time, we highly recommend calling the authoritative Harbor lookup endpoints in real-time to get the most accurate and up-to-date options.
 

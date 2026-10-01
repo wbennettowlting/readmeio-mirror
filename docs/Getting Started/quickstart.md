@@ -1,12 +1,12 @@
 ---
 title: Quickstart
 excerpt: This guide provides an introduction to getting started with the Harbor API, including how to authenticate requests, create customers, link blockchain addresses or bank accounts, and make API calls with the required headers and parameters.
-content:
+x-content:
   excerpt: This guide provides an introduction to getting started with the Harbor API, including how to authenticate requests, create customers, link blockchain addresses or bank accounts, and make API calls with the required headers and parameters.
 hidden: false
 metadata:
   robots: index
-privacy:
+x-privacy:
   view: public
 ---
 ### Role Definitions

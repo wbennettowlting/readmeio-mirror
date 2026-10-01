@@ -1,7 +1,7 @@
 ---
 title: MCP Server
 hidden: false
-privacy:
+x-privacy:
   view: public
 ---
 The OwlPay Harbor Model Context Protocol (MCP) server enables AI-powered code editors like Cursor and Windsurf, plus general-purpose tools like Claude Desktop, to interact directly with your OwlPay Harbor API and documentation.

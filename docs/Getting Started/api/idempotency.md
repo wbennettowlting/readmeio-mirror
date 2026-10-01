@@ -1,12 +1,12 @@
 ---
 title: Idempotency
 excerpt: Preventing duplicate API calls
-content:
+x-content:
   excerpt: Preventing duplicate API calls
 hidden: false
 metadata:
   robots: index
-privacy:
+x-privacy:
   view: public
 ---
 Harbor's API supports **idempotency**, allowing you to safely retry requests without unintentionally duplicating the same operation. When you create or update an object, utilize an idempotency key. In the event of a connection error, you can confidently repeat the request without the possibility of creating a duplicate object or executing the update twice.

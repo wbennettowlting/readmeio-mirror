@@ -3,7 +3,7 @@ title: Settlement Strategy
 hidden: true
 metadata:
   robots: index
-privacy:
+x-privacy:
   view: anyone_with_link
 ---
 The **settlement\_strategy** field allows clients to specify how and when funds should be settled after a transfer is successfully received. This field is optional and can be used to configure immediate or scheduled settlement behavior for each transfer.

@@ -2,9 +2,9 @@
 title: Error Codes
 metadata:
   robots: index
-privacy:
+x-privacy:
   view: public
-slug: error-codes
+x-slug: error-codes
 ---
 **Full Error Code Reference**
 

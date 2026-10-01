@@ -2,7 +2,7 @@
 title: Onboarding
 metadata:
   robots: index
-privacy:
+x-privacy:
   view: public
 ---
 To ensure security, legal compliance (KYC/AML), and standard-setting payment services, every customer using Harbor must go through our onboarding and verification process. 

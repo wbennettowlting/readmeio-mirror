@@ -3,7 +3,7 @@ title: Supporting Documents
 hidden: true
 metadata:
   robots: index
-privacy:
+x-privacy:
   view: anyone_with_link
 ---
 > 📘 Why Supporting Documents Are Needed?

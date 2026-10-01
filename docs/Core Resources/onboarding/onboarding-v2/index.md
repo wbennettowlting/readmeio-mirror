@@ -2,9 +2,9 @@
 title: Onboarding (V2)
 metadata:
   robots: index
-privacy:
+x-privacy:
   view: public
-slug: onboarding-v2
+x-slug: onboarding-v2
 ---
 **Graded Onboarding (V2)** verifies **individual customers** incrementally through progressive levels, each with its own limits, instead of requiring a complete KYC submission up front. It uses the `/api/v2/customers/{customer_uuid}/individual/onboarding` endpoints.
 

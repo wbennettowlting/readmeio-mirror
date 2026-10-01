@@ -3,7 +3,7 @@ title: Commission Fees
 hidden: false
 metadata:
   robots: index
-privacy:
+x-privacy:
   view: public
 ---
 Harbor provides support for setting transaction commissions to ensure revenue generation on every **Transfer**.

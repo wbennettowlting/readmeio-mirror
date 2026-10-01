@@ -3,7 +3,7 @@ title: Upgrade Level
 excerpt: >-
   How to upgrade verified individual customers to higher Graded Onboarding
   levels (Level 2 or Level 3).
-content:
+x-content:
   excerpt: >-
     How to upgrade verified individual customers to higher Graded Onboarding
     levels (Level 2 or Level 3).

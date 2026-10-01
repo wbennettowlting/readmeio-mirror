@@ -3,7 +3,7 @@ title: Transfer JSON Schema
 hidden: false
 metadata:
   robots: index
-privacy:
+x-privacy:
   view: public
 ---
 This endpoint returns a **route-specific** JSON Schema (Draft 2020-12) that describes the **exact request payload** required to create a (V2) transfer for a given `quote_id`.

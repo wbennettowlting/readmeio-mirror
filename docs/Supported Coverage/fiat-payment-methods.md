@@ -3,7 +3,7 @@ title: Fiat Payment Methods
 hidden: false
 metadata:
   robots: index
-privacy:
+x-privacy:
   view: public
 ---
 ### Supported Transfer Payment Methods

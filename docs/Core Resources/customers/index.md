@@ -4,7 +4,7 @@ excerpt: >-
   This guide provides an overview of how to register and manage customers using
   the Harbor Customers API, including KYC verification, required headers, and
   API request examples.
-content:
+x-content:
   excerpt: >-
     This guide provides an overview of how to register and manage customers
     using the Harbor Customers API, including KYC verification, required
@@ -12,7 +12,7 @@ content:
 hidden: false
 metadata:
   robots: index
-privacy:
+x-privacy:
   view: public
 ---
 The Harbor Customers API allows you to get KYC link for Customer, enabling you to manage the verification process independently. This API provides flexibility in handling customer interactions.

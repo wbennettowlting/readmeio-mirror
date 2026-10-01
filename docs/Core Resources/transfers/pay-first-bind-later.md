@@ -6,7 +6,7 @@ excerpt: >-
 hidden: false
 metadata:
   robots: index
-privacy:
+x-privacy:
   view: public
 ---
 In standard Debit Card off-ramp (payout) transactions, you must collect the recipient's card details up front and provide them via `destination.payout_instrument.linked_card_id`. 

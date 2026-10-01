@@ -2,9 +2,9 @@
 title: Onboarding (V1)
 metadata:
   robots: index
-privacy:
+x-privacy:
   view: public
-slug: onboarding-v1
+x-slug: onboarding-v1
 ---
 **Standard Onboarding (V1)** verifies a customer in a single, complete submission. It supports both **business (KYB)** and **individual (KYC)** customers, and uses the `/api/v1/customers/{customer_uuid}/onboarding` endpoints.
 

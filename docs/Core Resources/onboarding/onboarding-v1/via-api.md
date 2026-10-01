@@ -2,9 +2,9 @@
 title: Onboard via API
 metadata:
   robots: index
-privacy:
+x-privacy:
   view: public
-slug: via-api
+x-slug: via-api
 ---
 This guide introduces the direct API onboarding integration. Collect your customers' profiles and documents directly in your application and submit them to Harbor — either as a complete, single-call payload, or incrementally through a progressive level-based flow.
 

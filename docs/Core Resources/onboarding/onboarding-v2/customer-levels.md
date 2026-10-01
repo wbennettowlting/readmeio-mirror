@@ -3,7 +3,7 @@ title: Customer Levels
 excerpt: >-
   Detailed guide explaining the three onboarding levels (tiers), data collection
   requirements, and transaction limits for individual customers.
-content:
+x-content:
   excerpt: >-
     Detailed guide explaining the three onboarding levels (tiers), data
     collection requirements, and transaction limits for individual customers.

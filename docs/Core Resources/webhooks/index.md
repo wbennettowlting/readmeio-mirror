@@ -2,11 +2,11 @@
 title: Webhooks
 metadata:
   robots: index
-content:
+x-content:
   excerpt: >-
     This document describes the API specification for subscribing to event
     notifications (webhooks).
-privacy:
+x-privacy:
   view: public
 ---
 You create a Subscription with a target HTTPS endpoint and a list of Event Types. When an event occurs, Harbor POSTs a signed JSON payload to your endpoint, you must verify authenticity using Harbor’s HMAC signature headers.

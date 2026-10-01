@@ -1,12 +1,12 @@
 ---
 title: Debit Card Coverage
-content:
+x-content:
   excerpt: >-
     Learn about the current regional, network, and card type support scope for
     Debit Card (VDC) transactions through the Harbor API.
 metadata:
   robots: index
-privacy:
+x-privacy:
   view: public
 ---
 The Debit Card (Visa Direct to Card / VDC) feature supports Account Funding Transactions (AFT/Pull) for on-ramping and Original Credit Transactions (OCT/Push) for off-ramping, subject to specific network and regional support.

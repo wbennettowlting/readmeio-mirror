@@ -1,12 +1,12 @@
 ---
 title: Third-Party Recipients
 excerpt: Handling Third-Party Payments via `destination.is_self_transfer`
-content:
+x-content:
   excerpt: Handling Third-Party Payments via `destination.is_self_transfer`
 hidden: false
 metadata:
   robots: index
-privacy:
+x-privacy:
   view: public
 ---
 If you are initiating a transfer on behalf of a customer and the recipient is not the customer, you must clearly indicate this in your API request.
@@ -48,5 +48,5 @@ If the recipient is the same individual or business as the sender (i.e., the cus
 <br />
 
 <Callout icon="🚧">
-  Please note that setting **is_self_transfer** in an **on-ramp** scenario may affect the changes of the [Travel Rule](doc:travel-rule).
+  Please note that setting **is_self_transfer** in an **on-ramp** scenario may affect the changes of the Travel Rule.
 </Callout>

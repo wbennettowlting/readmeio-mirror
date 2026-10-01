@@ -2,7 +2,7 @@
 title: Stablecoins and Blockchains
 metadata:
   robots: index
-privacy:
+x-privacy:
   view: public
 ---
 ### Stablecoin

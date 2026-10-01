@@ -3,7 +3,7 @@ title: Fee Model
 hidden: false
 metadata:
   robots: index
-privacy:
+x-privacy:
   view: public
 ---
 OwlPay Harbor operates on a **B2B Billing Model**. All service fees are billed directly to the **Application (Merchant)**, and no fees are ever charged directly to your end-users.

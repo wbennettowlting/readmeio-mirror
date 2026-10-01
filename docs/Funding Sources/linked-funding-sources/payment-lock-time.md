@@ -3,14 +3,14 @@ title: Payment Lock Time
 excerpt: >-
   This guide explains the settlement periods for ACH Pull and Debit Card
   transactions, and how funds are managed during the settlement process.
-content:
+x-content:
   excerpt: >-
     This guide explains the settlement periods for ACH Pull and Debit Card
     transactions, and how funds are managed during the settlement process.
 hidden: false
 metadata:
   robots: index
-privacy:
+x-privacy:
   view: public
 ---
 ### Settlement and Payment Lock Time

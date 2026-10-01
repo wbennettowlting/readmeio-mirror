@@ -3,14 +3,14 @@ title: Deposit Accounts vs. Narrative Transfers
 excerpt: >-
   Learn the key architectural and operational differences between Customer
   Deposit Accounts and Narrative-Based Transfers in Harbor.
-content:
+x-content:
   excerpt: >-
     Learn the key architectural and operational differences between Customer
     Deposit Accounts and Narrative-Based Transfers in Harbor.
 hidden: false
 metadata:
   robots: index
-privacy:
+x-privacy:
   view: public
 ---
 > 📘 Regional Availability & Usage

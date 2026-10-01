@@ -2,11 +2,11 @@
 title: Linked Funding Sources
 metadata:
   robots: index
-content:
+x-content:
   excerpt: >-
     Learn how to link a U.S. bank account (ACH Pull) or debit card as a funding
     source for on-ramp transfers through the Harbor API.
-privacy:
+x-privacy:
   view: public
 ---
 Harbor supports two ways for your customers to fund on-ramp transfers directly from their financial accounts — linking a **bank account** via ACH Pull, or binding a **debit card**.

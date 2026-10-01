@@ -3,14 +3,14 @@ title: Authentication
 excerpt: >-
   This guide explains how to securely authenticate and access the Owlting Harbor
   API using API keys.
-content:
+x-content:
   excerpt: >-
     This guide explains how to securely authenticate and access the Owlting
     Harbor API using API keys.
 hidden: false
 metadata:
   robots: index
-privacy:
+x-privacy:
   view: public
 ---
 OwlPay Harbor API uses API keys for authentication. All requests must include the API key in the **X-API-Key** header. No additional credentials or passwords are required.

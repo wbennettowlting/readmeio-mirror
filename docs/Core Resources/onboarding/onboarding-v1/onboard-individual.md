@@ -2,7 +2,7 @@
 title: Onboard Individual
 metadata:
   robots: index
-privacy:
+x-privacy:
   view: public
 ---
 This guide explains how to onboard an individual customer (KYC) through a direct API integration. Collect individual profiles and identity documents directly inside your own application and submit them to Harbor in a single API request.

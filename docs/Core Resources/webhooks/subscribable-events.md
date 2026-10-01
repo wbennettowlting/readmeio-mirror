@@ -3,7 +3,7 @@ title: Subscribable Events
 hidden: false
 metadata:
   robots: index
-privacy:
+x-privacy:
   view: public
 ---
 <br />

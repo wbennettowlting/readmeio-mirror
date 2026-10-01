@@ -4,7 +4,7 @@ excerpt: >-
   This guide explains how to integrate the Wallet API via the OwlPay Harbor API,
   enabling your application to create and manage blockchain wallets for
   receiving and sending crypto assets.
-content:
+x-content:
   excerpt: >-
     This guide explains how to integrate the Wallet API via the OwlPay Harbor
     API, enabling your application to create and manage blockchain wallets for
@@ -12,7 +12,7 @@ content:
 hidden: false
 metadata:
   robots: index
-privacy:
+x-privacy:
   view: public
 ---
 <Callout icon="⚠️" theme="warning">

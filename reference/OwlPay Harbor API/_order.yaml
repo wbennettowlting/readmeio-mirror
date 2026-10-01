@@ -1,9 +1,9 @@
-- deprecated
+- deprecated-transfer-v1
 - application
 - application-recipients
 - bank-connection
 - countries
-- customers-cards
+- customer-s-cards
 - customer-deposit-accounts
 - customer-management
 - customer-onboarding
@@ -11,8 +11,8 @@
 - faucet
 - individual-graded-kyc-v2
 - occupations
-- rfi-request-for-information
-- copy-of-rfi-request-for-information
+- rfi-request-for-information-v1
+- rfi-request-for-information-v2
 - reconciliation
 - transfer-v2
 - wallet

@@ -2,7 +2,7 @@
 title: Onboard Business
 metadata:
   robots: index
-privacy:
+x-privacy:
   view: public
 ---
 This guide explains how to onboard a business customer (KYB) through a direct API integration. You collect company details, associated persons (directors, UBOs, representatives), and corporate documents directly inside your application, and submit them to Harbor in a single API request.

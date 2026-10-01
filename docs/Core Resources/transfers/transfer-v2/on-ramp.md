@@ -3,7 +3,7 @@ title: On-ramp
 hidden: false
 metadata:
   robots: index
-privacy:
+x-privacy:
   view: public
 ---
 Convert fiat currency (e.g., USD) into stablecoin (e.g., USDC) and deliver it to a recipient's blockchain wallet.

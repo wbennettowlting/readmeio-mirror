@@ -1,12 +1,12 @@
 ---
 title: Recipients
 excerpt: Pre-fill and manage reusable payee destinations for frictionless transfers.
-content:
+x-content:
   excerpt: Pre-fill and manage reusable payee destinations for frictionless transfers.
 hidden: false
 metadata:
   robots: index
-privacy:
+x-privacy:
   view: anyone_with_link
 ---
 The **Application Recipients API** (also known as the **Recipient Book**) allows you to create, manage, and reuse pre-filled payee destination profiles across your application.

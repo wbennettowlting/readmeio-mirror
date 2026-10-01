@@ -3,14 +3,14 @@ title: Deposit Accounts
 excerpt: >-
   Learn how to provision dedicated USD bank accounts for automatic
   fiat-to-stablecoin on-ramp transfers.
-content:
+x-content:
   excerpt: >-
     Learn how to provision dedicated USD bank accounts for automatic
     fiat-to-stablecoin on-ramp transfers.
 hidden: false
 metadata:
   robots: index
-privacy:
+x-privacy:
   view: public
 ---
 > 📘 Looking for Comparison?

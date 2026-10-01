@@ -1,12 +1,12 @@
 ---
 title: Link Bank Account
 excerpt: '  This document describes how to integrate the ACH Pull (direct bank account debit) feature via the OwlPay Harbor API, allowing your end users to initiate deposits directly from their linked U.S. bank accounts.'
-content:
+x-content:
   excerpt: '  This document describes how to integrate the ACH Pull (direct bank account debit) feature via the OwlPay Harbor API, allowing your end users to initiate deposits directly from their linked U.S. bank accounts.'
 hidden: false
 metadata:
   robots: index
-privacy:
+x-privacy:
   view: public
 ---
 ### ACH Pull Integration Guide
