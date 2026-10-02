@@ -15,9 +15,14 @@ metadata:
 x-privacy:
   view: public
 ---
+
+<br />
+
 <Callout icon="⚠️" theme="warning">
   The Debit Card feature is currently available only for **Individual** customers. Business customers are not yet supported.
 </Callout>
+
+<br />
 
 <Callout icon="📧" theme="info">
   Before executing an Debit Card Pull transaction, OwlPay will send an authorization email to the Customer requesting their approval. The email will clearly identify which Application is initiating the pull request.
@@ -68,6 +73,8 @@ sequenceDiagram
 1. Your Application has the `DEBIT_CARD` payment method enabled
 2. The Customer has completed KYC verification (status: `VERIFIED`)
 3. The Customer has completed bank compliance onboarding (CRB Bank Onboarding status: `ONBOARDED`)
+
+<br />
 
 <Callout icon="📋" theme="info">
   **Support Coverage Notice:** Before integrating, please review the eligible card types, network brands, and countries in the [**Debit Card Support Coverage**](/docs/debit-card-coverage) guide. Note that credit cards are not supported.
@@ -136,6 +143,8 @@ curl --location --request POST 'https://harbor-sandbox.owlpay.com/api/v1/custome
     }
 }
 ```
+
+<br />
 
 <Callout icon="📘" theme="info">
   **Card Information for Testing**
@@ -290,6 +299,8 @@ The response includes quotes for multiple payment methods. Select the item where
 ### Step 4: Create Debit Card Transfer
 
 Use the `card_` ID from Step 2 and the `quote_id` from Step 3 to create the transfer.
+
+<br />
 
 <Callout icon="⏳" theme="info">
   **Settlement Time Notice:** Debit Card transfers typically settle in **T+1** business days. For more details on fund availability and payment locks, see [**Settlement and Payment Lock Time**](/docs/payment-lock-time).

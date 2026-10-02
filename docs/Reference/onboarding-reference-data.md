@@ -10,6 +10,8 @@ The lists below are provided for convenience so you can quickly build dropdowns 
 
 ### 1. Occupations — `individual.occupation`
 
+<br />
+
 > 📘 Authoritative API Endpoint
 > `GET /api/v1/occupations`
 > Submit the `value` (a slug) in address fields; Harbor maps it to the provider code at submit time.
@@ -146,6 +148,8 @@ Global list of occupations (131 options):
 
 ### 2. Job titles — `associated_persons[].position`
 
+<br />
+
 > 📘 Authoritative API Endpoint
 > `GET /api/v1/job-titles`
 
@@ -164,6 +168,8 @@ Global list of job titles (9 options):
 | `other` | Other |
 
 ### 3. Company types — `company.type`
+
+<br />
 
 > 📘 Fixed Enum List
 > Documented inline in the onboarding guides (not available from dynamic endpoints).
@@ -185,6 +191,8 @@ Fixed enum (10 options):
 
 ### 4. Source of funds — `company.source_of_funds`
 
+<br />
+
 > 📘 Fixed Enum List
 > Documented inline in the onboarding guides (not available from dynamic endpoints).
 
@@ -201,12 +209,16 @@ Fixed enum (6 options):
 
 ### 5. Identity document types — `id_type`, `identity_document.type`
 
+<br />
+
 > 📘 Fixed Enum List
 > Enforced server-side. The valid set of document types depends on the issuing country.
 
 Fixed enum: `NATIONAL_ID`, `PASSPORT`, `DRIVER_LICENCE`, `RESIDENCE_PERMIT`.
 
 ### 6. Supported countries
+
+<br />
 
 > 📘 Enforced Server-Side
 > Enforced server-side; not available via lookup endpoints.
@@ -217,6 +229,8 @@ Used by `*.country`, `nationality`, `country_of_operation[]`, `tax_jurisdiction_
 
 ### 7. Prohibited countries
 
+<br />
+
 > 📘 Enforced Server-Side
 > Enforced server-side; not available via lookup endpoints.
 
@@ -225,6 +239,8 @@ Prohibited countries (20 codes):
 `CU` `IR` `KP` `AF` `BY` `CD` `CF` `GW` `IQ` `LY` `ML` `MM` `RU` `SD` `SO` `SS` `SY` `UA` `YE` `ZW`
 
 ### 8. Address subdivisions — example: US subdivisions
+
+<br />
 
 > 📘 Authoritative API Endpoint
 > `GET /api/v1/countries/{country}/subdivisions`
@@ -293,6 +309,8 @@ United States (57), as an example:
 | `VI` | U.S. Virgin Islands |
 
 ### 9. Industries — example: US industries
+
+<br />
 
 > 📘 Authoritative API Endpoint
 > `GET /api/v1/countries/{country}/industries`

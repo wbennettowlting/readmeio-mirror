@@ -25,6 +25,8 @@ All level-elevation requests must be sent to the onboarding upgrade endpoint:
 #### Required Headers
 Your request must include standard API headers, including `X-API-KEY`, `Content-Type: application/json`, and an `Idempotency-Key` to prevent duplicate submissions.
 
+<br />
+
 > 📘 One Endpoint, No Target Level
 > 
 > There is a single upgrade route, and you never name the level you are applying for. The endpoint always targets the level directly above the customer's **approved** level, and the body it expects follows from that:
@@ -87,6 +89,8 @@ Sending either one returns **422 Unprocessable Entity** as a standard validation
 
 Response: **202 Accepted** with a status of `processing`.
 
+<br />
+
 > 🚧 Transacting Pauses During This Upgrade
 > 
 > Moving from Level 1 to Level 2 pauses transacting: the response reports `transfers_blocked: true`, and it stays true until the Level 2 review resolves. Plan for this in your UI — the customer was able to transact a moment earlier.
@@ -146,6 +150,8 @@ Upgrade requests may return `409 Conflict` (due to the customer's current onboar
 | **409** | `2313` | `elevation_already_requested` — a Level 3 application was already filed inside the cooldown window (**7 days** by default), whatever its outcome. The message names the date a new one can be sent. |
 | **409** | `2312` | `declined_is_final` — the customer has been declined. No upgrade, and no onboarding, is accepted afterwards. |
 | **409** | `2302` / `2318` / `2319` | A submission is still open for this customer. Let the current review resolve before applying to elevate. |
+
+<br />
 
 > 📘 Consolidated Error Code Reference
 > 

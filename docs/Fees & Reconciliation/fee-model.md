@@ -35,6 +35,8 @@ When you initiate a transfer on behalf of your end-user, the `commission` parame
   * _Example: A 1,000 USDC transfer results in a 1,000 USD payout._
 * **Custom Commission:** If you set a `commission`, that amount is deducted from the transfer principal. This amount is recorded as your revenue and will be credited to you during the monthly netting settlement.
 
+<br />
+
 <Callout icon="📘" theme="info">
   **Important:**
   Regardless of whether you choose to charge a commission, OwlPay will charge the Application (Merchant) the agreed Service Fees (Platform Take Rate + Processing Fee) for every successful transaction.

@@ -105,6 +105,8 @@ graph TD
 | `verified` | Verification passed successfully. | **Done.** Customer is cleared to transact. |
 | `declined` | The onboarding submission was permanently rejected (terminal). | Cannot be corrected. Create a new customer record. |
 
+<br />
+
 > 📘 Onboarding Lifecycle & Exceptions Playbook
 > 
 > For a highly detailed guide on how to programmatically detect and resolve `action_required` states, handle final `declined` conditions, or manage customer-level Requests for Information (RFIs), please refer directly to the [**Onboarding & RFI Guide**](/docs/onboarding-rfi).
@@ -140,6 +142,8 @@ To prevent upload timeouts, adhere strictly to the following size limits across 
 ### 6. Global Error Code Reference
 
 When validation or business rules are violated, Harbor returns standard validation error arrays (`422`), state conflicts (`409`), or explicit custom numeric error codes.
+
+<br />
 
 > 📘 Consolidated Error Code Reference
 > 

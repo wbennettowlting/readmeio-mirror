@@ -20,11 +20,16 @@ In this example, you'll:
 * Take the Customer through onboarding.
 * Make an **off-ramp** transfer, converting a stablecoin such as USDC into fiat currency and sending it to a bank account.
 
+Throughout this guide, you'll create a Customer named **John Morgan**, based in the US. John then sends **100 USD** to **Sam Rivera** in **Mexico**, paying with USDC on Ethereum. Harbor converts the USDC and pays out the USD to Sam's bank account by international wire.
 
 
-### Application
 
-This guide assumes that you already have a **Sandbox API key** for your application and that you can call the Harbor API endpoints. If you don't have an API key yet, see [**Authentication**](/docs/authentication).
+### Prerequisites
+
+This example runs in the **Sandbox** environment, so no real funds are moved. Make sure you have:
+
+* Access to the Harbor Portal.
+* A Sandbox API key. If you don't have one yet, see [**Get API access**](/docs/api).
 
 All requests use the Sandbox base URL, `https://harbor-sandbox.owlpay.com`, and must include your API key in the `X-API-KEY` header.
 
@@ -38,7 +43,7 @@ When creating a **Customer** object, create one for each individual or business 
 
 #### Creating a customer
 
-In this example, we’ll create an individual Customer named John Michael Doe.
+In this example, we’ll create an individual Customer named John Morgan.
 
 
 ```shell
@@ -50,9 +55,8 @@ curl --location --request POST 'https://harbor-sandbox.owlpay.com/api/v1/custome
 --data-raw '{
   "type": "individual",
   "first_name": "John",
-  "middle_name": "Michael",
-  "last_name": "Doe",
-  "email": "john.doe@example.com",
+  "last_name": "Morgan",
+  "email": "john.morgan@example.com",
   "phone_country_code": "US",
   "phone_number": "555-555-1234",
   "birth_date": "1988-04-15",
@@ -73,9 +77,9 @@ The endpoint returns the newly created Customer. These fields matter for the nex
         "state": "onboarding_needed",
         "type": "individual",
         "first_name": "John",
-        "middle_name": "Michael",
-        "last_name": "Doe",
-        "email": "john.doe@example.com",
+        "middle_name": null,
+        "last_name": "Morgan",
+        "email": "john.morgan@example.com",
         "phone_country_code": "US",
         "phone_number": "555-555-1234",
         "birth_date": "1988-04-15",
@@ -118,6 +122,8 @@ Send the Customer the `agreement_link` from the response so they can review and 
 
 Next, send the Customer the `kyc_link`. The Customer uses it to submit the information Harbor needs for KYC (individuals) or KYB (businesses) verification.
 
+<br />
+
 <Accordion title="Can I submit customer information through the API?" icon="fa-solid fa-message-question">
   Yes. Instead of the hosted `kyc_link` form, you can submit the Customer's information through the Harbor API. See [**Onboard via API**](/docs/via-api).
 </Accordion>
@@ -126,9 +132,20 @@ Next, send the Customer the `kyc_link`. The Customer uses it to submit the infor
 
 After the Customer submits their information, Harbor reviews it and updates the Customer's status. The diagram below shows the possible status changes.
 
+
+
 <Image align="center" border={true} caption="Customer KYC status change diagram" src="https://files.readme.io/6d124f9016e0d0131981a451bccb9a67c7b1a8a816ca1a3965442d29be1a2fa2-Customer_Status.jpg" width="200px" />
 
 For a detailed explanation of each status, see [**Status Definitions**](/docs/status-definitions).
+
+<br />
+
+<Callout icon="📘" theme="info">
+  #### Sandbox vs. Production
+
+  - In **Sandbox**, onboarding is approved automatically, usually within 1–2 minutes. 
+  - In **Production**, Harbor reviews each submission, which can take 1–2 business days.
+</Callout>
 
 ### Transfers
 
@@ -224,7 +241,7 @@ The endpoint returns a list of available quotes:
 
 #### Step 2: Obtain the transfer requirements
 
-Use the `quote_id` to fetch the transfer requirements. The response is a JSON Schema describing the exact payload the transfer needs. See [**Transfer JSON Schema**](/docs/transfer-json-schema).
+Transfer requirements are dynamic. The fields a transfer needs, such as the recipient's details and bank information, depend on the destination country, currency, and payment method. Instead of hardcoding these fields, use the `quote_id` to fetch the requirements for this specific transfer. The response is a JSON Schema describing the exact payload the transfer needs. See [**Transfer JSON Schema**](/docs/transfer-json-schema).
 
 ```shell
 curl --location --request GET 'https://harbor-sandbox.owlpay.com/api/v2/transfers/quotes/quote_uioUTmUbPzOxPkHvaHyC0jB0dsA7ocNrhqnIHYQv/requirements' \
@@ -317,7 +334,7 @@ curl --location --request POST 'https://harbor-sandbox.owlpay.com/api/v2/transfe
   },
   "destination": {
     "beneficiary_info": {
-      "beneficiary_name": "Juan Perez",
+      "beneficiary_name": "Sam Rivera",
       "beneficiary_address": {
         "street": "Av. Reforma 123",
         "city": "Mexico City",
@@ -327,7 +344,7 @@ curl --location --request POST 'https://harbor-sandbox.owlpay.com/api/v2/transfe
       }
     },
     "payout_instrument": {
-      "account_holder_name": "Juan Perez",
+      "account_holder_name": "Sam Rivera",
       "bank_name": "BBVA Mexico",
       "account_number": "012180001234567891",
       "swift_code": "BCMRMXMM"
@@ -367,7 +384,7 @@ The endpoint returns the newly created transfer:
             "asset": "USD",
             "amount": "100.00000000",
             "payout_instrument": {
-                "account_holder_name": "Juan Perez",
+                "account_holder_name": "Sam Rivera",
                 "bank_name": "BBVA Mexico",
                 "account_number": "012180001234567891",
                 "swift_code": "BCMRMXMM"

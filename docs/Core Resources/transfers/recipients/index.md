@@ -33,6 +33,8 @@ When initiating a payout via `POST /api/v2/transfers` (Create Transfer (V2):
 2. **Payload Expansion**: Harbor looks up the saved recipient for your application, expands the dot-notation keys into a structured `destination` object, and injects them into the transfer payload.
 3. **Field Overriding (**`array_replace_recursive`**)**: Any destination fields explicitly included in your `POST /api/v2/transfers` request body will automatically override the pre-filled values stored in the recipient record.
 
+<br />
+
 <Callout icon="📘" theme="info">
   ### Precedence & Overriding
 
@@ -120,6 +122,8 @@ You can list, inspect, update, or delete application-level recipients using the 
 | **Get Recipient**    | `GET`       | `/api/v1/applications/recipients/{recipient_id}` | Retrieve details of a specific recipient by id.                              |
 | **Update Recipient** | `PUT`       | `/api/v1/applications/recipients/{recipient_id}` | Update an existing recipient's  or pre-filled payload.                       |
 | **Delete Recipient** | `DELETE`    | `/api/v1/applications/recipients/{recipient_id}` | Remove a recipient entry from your address book.                             |
+
+<br />
 
 <Callout icon="ℹ️" theme="info">
   ### Portal Management

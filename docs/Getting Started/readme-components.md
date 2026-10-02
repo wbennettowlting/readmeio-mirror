@@ -11,11 +11,15 @@ This page is **hidden**, so readers won't see it in the sidebar. To show it, set
 
 Use a callout to draw attention to a note, tip, or warning. The first heading inside a callout becomes its title.
 
+<br />
+
 <Callout icon="📘" theme="info">
   ### Info
 
   General information or a helpful note.
 </Callout>
+
+<br />
 
 <Callout icon="👍" theme="okay">
   ### Success
@@ -23,17 +27,23 @@ Use a callout to draw attention to a note, tip, or warning. The first heading in
   A tip, a recommended approach, or a confirmation.
 </Callout>
 
+<br />
+
 <Callout icon="🚧" theme="warn">
   ### Warning
 
   Something the reader should be careful about.
 </Callout>
 
+<br />
+
 <Callout icon="❗️" theme="error">
   ### Error
 
   Something that will break if done wrong.
 </Callout>
+
+<br />
 
 <Callout icon="💡" theme="default">
   ### Default
@@ -55,6 +65,8 @@ Available themes: `info`, `okay`, `warn`, `error`, and `default`. Any emoji work
 
 You can also write a callout as a blockquote that starts with an emoji. The emoji sets the theme: 📘 info, 👍 success, 🚧 warning, ❗️ error.
 
+<br />
+
 > 📘 Blockquote callout
 >
 > The first line is the title; the rest is the body.
@@ -74,7 +86,7 @@ Use cards for a grid of links, such as an overview page pointing to its child pa
     Create your first customer and transfer.
   </Card>
 
-  <Card title="Authentication" href="/docs/authentication" icon="fa-solid fa-key">
+  <Card title="API Keys" href="/docs/api-keys" icon="fa-solid fa-key">
     Authenticate requests with your API key.
   </Card>
 </Cards>
@@ -85,7 +97,7 @@ Use cards for a grid of links, such as an overview page pointing to its child pa
     Create your first customer and transfer.
   </Card>
 
-  <Card title="Authentication" href="/docs/authentication" icon="fa-solid fa-key">
+  <Card title="API Keys" href="/docs/api-keys" icon="fa-solid fa-key">
     Authenticate requests with your API key.
   </Card>
 </Cards>
@@ -124,6 +136,8 @@ Use tabs to show alternatives side by side, such as setup steps for different to
 ### Accordion
 
 Use an accordion to tuck away details that not every reader needs.
+
+<br />
 
 <Accordion title="What is an idempotency key?" icon="fa-solid fa-circle-question">
   A unique value you send in the `X-Idempotency-Key` header so a retried request isn't processed twice.
@@ -211,7 +225,7 @@ Use `Anchor` when a link needs extra attributes, such as opening in a new tab.
 | A guide page | `[Quickstart](doc:quickstart)` | Checked by `npx @readme/cli lint`. Doesn't click through in the local preview. |
 | A guide page | `[Quickstart](/docs/quickstart)` | Works in the local preview. Not checked by the linter. |
 | An API reference page | `[Create a transfer](/reference/createatransferv2)` | Uses the reference page's file name. |
-| A section on a page | `[Example](/docs/authentication#example)` | Anchors are the heading text in lowercase, with spaces as hyphens. |
+| A section on a page | `[Example](/docs/api-keys#example)` | Anchors are the heading text in lowercase, with spaces as hyphens. |
 
 ### Code blocks
 

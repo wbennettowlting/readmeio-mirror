@@ -8,6 +8,8 @@ x-privacy:
 ---
 Convert fiat currency (e.g., USD) into stablecoin (e.g., USDC) and deliver it to a recipient's blockchain wallet.
 
+<br />
+
 <Callout icon="👉" theme="info">
 
 **Direct API Reference:**
@@ -414,6 +416,8 @@ curl --location 'https://harbor-sandbox.owlpay.com/api/v2/transfers' \
     }
 }
 ```
+
+<br />
 
 <Callout icon="💡" theme="info">
 **Sandbox Testing Tip**

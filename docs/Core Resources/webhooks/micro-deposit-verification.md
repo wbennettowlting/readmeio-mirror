@@ -29,6 +29,8 @@ If the account number matches no account, no webhook is sent and Harbor raises a
 
 ### A micro-deposit is not an on-ramp
 
+<br />
+
 > 📘 It never becomes a transfer: no `transfer.deposit.created` is emitted, no conversion takes place, no hold is placed, and your balance does not move. Compare `transfer.deposit.created`, which is fired when a genuine inbound deposit creates an ON_RAMP transfer.
 
 Those few cents will not appear in your regular payment records or in balance movements. This event, and the email below, are the only notice you receive.
@@ -55,6 +57,8 @@ Subscribe with `bank_account.micro_deposit.received`, or the wildcard `bank_acco
 <br />
 
 ### Testing it in the sandbox
+
+<br />
 
 > 🚧 Planned for release in October 2026
 >

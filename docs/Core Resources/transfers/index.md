@@ -7,6 +7,8 @@ x-privacy:
 ---
 ### Transfer API (V2)
 
+<br />
+
 <Callout icon="📘" theme="info">
   **The Transfer (V2) API** supports **USDC/local currencies**  & **USD/USDC** & **USDC/USDC** and Quote API & JSON Schema.
 </Callout>

@@ -15,6 +15,9 @@ metadata:
 x-privacy:
   view: public
 ---
+
+<br />
+
 <Callout icon="⚠️" theme="warning">
 The Wallet API is currently available only to Applications registered as US-based companies. Your business operating location and company registered address must be located in a state where OwlPay holds a Money Transmitter License (MTL). See the full list of licensed states at [Licenses and Disclosures](https://www.owlting.com/owlpay/licenses?lang=en).
 </Callout>
@@ -47,6 +50,8 @@ The Wallet API is currently available only to Applications registered as US-base
 | Optimism | `optimism` | OP Mainnet | **OP Sepolia** |
 | Stellar | `stellar` | Public Network | **Test Network** |
 | Solana | `solana` | Mainnet | **Devnet** |
+
+<br />
 
 <Callout icon="💡" theme="info">
 **Sandbox Note**

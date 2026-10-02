@@ -60,6 +60,8 @@ source.amount = destination.amount + commission_fee
 **No technical limit:**  
 The system can always compute a valid source.amount, so no maximum commission limit is required.
 
+<br />
+
 <Callout icon="📘" theme="info">
   **Markup Percentage Limitation**
 
@@ -116,6 +118,8 @@ commission_fee = source.amount * commission.percentage + commission.amount
 source.amount = (500 + 5.00) / (1 - 0.03) = 520.618556
 commission_fee = 520.618556 * 3% + 0 = 15.618556
 ```
+
+<br />
 
 <Callout icon="📘" theme="info">
   **Why isn't `commission_fee` simply `destination.amount * commission.percentage`?**

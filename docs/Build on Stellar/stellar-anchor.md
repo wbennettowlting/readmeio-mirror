@@ -10,6 +10,8 @@ x-privacy:
 
 For those who are new to integrating with Stellar Anchors, this article and the resources below will guide you through the entire integration process.
 
+<br />
+
 > 📘 What you'll learn
 >
 > * How to integrate with our Stellar Anchor.
@@ -40,14 +42,14 @@ Applications seeking to integrate with Owlpay Harbor's **Stellar Anchor** must i
 
 Before you get access to **OwlPay Harbor**, you should test your implementation with the SDF's Stellar Test Anchor. It implements the same APIs as OwlPay Harbor service but uses a different asset. The information for each asset is below.
 
-#### Stellar Reference Token
+#### Stellar Reference Token (SRT)
 
-##### This token is only on testnet.
+This token is only on testnet.
 
 Issuing Account: [GCDNJUBQSX7AJWLJACMJ7I4BC3Z47BQUTMHEICZLE6MU4KQBRYG5JY6B](https://stellar.expert/explorer/testnet/asset/SRT-GCDNJUBQSX7AJWLJACMJ7I4BC3Z47BQUTMHEICZLE6MU4KQBRYG5JY6B-1)
 Asset Code: SRT
 
-##### USD Coin
+#### USD Coin (USDC)
 
 **Testnet network (Test mode)**:
 Issuing Account: [GBBD47IF6LWK7P7MDEVSCWR7DPUWV3NY3DTQEVFL4NAT4AQH3ZLLFLA5](https://stellar.expert/explorer/testnet/asset/USDC-GBBD47IF6LWK7P7MDEVSCWR7DPUWV3NY3DTQEVFL4NAT4AQH3ZLLFLA5-1)
@@ -61,14 +63,14 @@ Asset Code: USDC
 
 The integration process between a **Wallet App**, **Wallet  App Server**,  and **OwlPay Harbor** using **Stellar SEP-10** for authentication and **SEP-24** for handling on/off-ramp transactions.
 
-#### Flow explanation
+<br />
 
 <Callout icon="📘" theme="info">
   In order to proceed with any transactions, we must first authenticate with the Anchor (SEP-10).  
   **Note:** Harbor Anchor needs to be able to verify the identity of the wallet originating the request so we must add `client_domain`, or authentication will fail.
 </Callout>
 
-### Authentication SEP-10:
+#### Authentication (SEP-10)
 
 Let's imagine the workflow for a wallet app. It should proceed as follows:
 
@@ -86,7 +88,9 @@ Let's imagine the workflow for a wallet app. It should proceed as follows:
 
    <Image align="center" border={true} caption="**Harbor's Anchor SEP-10 Authentication Flow**" src="https://files.readme.io/e0245725efa5cd59decaef0fb743e927d5075d4d6a94c453bd419fd1fe4cae37-stellar-sep10.drawio_1.png" />
 
-### Deposit SEP-24 (on-ramp):
+#### Deposit (SEP-24 On-Ramp)
+
+<br />
 
 <Callout icon="📘" theme="info">
   The deposit flow can only be fulfilled if the Stellar account has established a **trust line** for the given asset.
@@ -99,9 +103,9 @@ Let's imagine the workflow for a wallet app. It should proceed as follows:
 3. **Bank Wire Funding Account**
    * For regulatory purposes, you must first pass a KYC verification also provided through this link.  After doing so users can obtain our **Bank Wire Funding Account** to make the  deposit. If you want to withdraw money, you need to take the following additional steps.
 
-### Withdrawal SEP-24 (off-ramp):
+#### Withdrawal (SEP-24 Off-Ramp)
 
-* <Image align="center" border={true} caption="Diagram Explanation: Integration with OwlPay Harbor for withdraw flow" src="https://files.readme.io/b1776d281d95c92108e1c782dfb567fb9e853861c23d13f182eea74b7a9084a3-cc9088e671b1dbe90e05ca19303af891dbcb96213632724303b44b198cd5329a-Anchor_flow_withdrawal.jpg" />
+<Image align="center" border={true} caption="Diagram Explanation: Integration with OwlPay Harbor for withdraw flow" src="https://files.readme.io/b1776d281d95c92108e1c782dfb567fb9e853861c23d13f182eea74b7a9084a3-cc9088e671b1dbe90e05ca19303af891dbcb96213632724303b44b198cd5329a-Anchor_flow_withdrawal.jpg" />
 
 1. **Execute an On-Chain Transfer**:
 
@@ -129,7 +133,7 @@ Let's imagine the workflow for a wallet app. It should proceed as follows:
    * Once the transaction is confirmed, the **Wallet App** should notify the user that the funds are on their way.  This is because after we have sent the funds the beneficiary account provided, we have no way to know exactly how long it will take or how the receiving bank will notify the beneficiary.
    * This provides the user with confirmation and updates them on the progress of their withdrawal.
 
-### Statuses
+### Transaction Statuses
 
 Throughout the life cycle of a transaction, there are many possible different statuses.  Be sure poll the SEP-24 status endpoint any time you need to see the latest updates.
 
@@ -152,13 +156,13 @@ Throughout the life cycle of a transaction, there are many possible different st
 | `too_large`                      | Deposit/withdrawal size exceeded `max_amount`.                                                                                                                                    |
 | `error`                          | Catch-all for any error not enumerated above.                                                                                                                                     |
 
-**The status change flow is as follows**
+#### Status Flow
 
 <Image align="center" border={true} src="https://files.readme.io/8e441a6cefba5cc795844204a71b7377818925736a2443b6026c84978befe4d3-1ff68f5065270016d8ae6ef903fe6d8d25f20cde68490df1bd60dc1b5d87bd37-Harbor_Status_flow.drawio.png" className="border" />
 
 The application side should handle deposit(on-ramp) and withdrawal(off-ramp) status updates.
 
-**Important Notes for Withdraw (Off-Ramp):**
+#### Withdrawal (Off-Ramp) Notes
 
 1. **Provide On-Chain Transfer Information**
    * When the status changes to `pending_user_transfer_start`, you need to provide the user with the necessary on-chain transfer information.
@@ -169,9 +173,9 @@ The application side should handle deposit(on-ramp) and withdrawal(off-ramp) sta
    * There may be a brief period where the transaction remains in the `pending_anchor` state.
    * During this phase, OwlPay Harbor performs customer due diligence (KYC/AML checks) for each transaction.
 
-### Let’s get started
+### Integration Steps
 
-#### Installing the Wallet or other Client SDKs
+#### Step 1: Install the Wallet SDK
 
 The docs on stellar sdks are quite scattered and implementations may vary based on your needs.  So we recommend exploring your options and finding what fits for your particular case.  We'll just two possibilities here, starting with `@stellar/typescript-wallet-sdk`.
 
@@ -181,7 +185,7 @@ You can use yarn to install it:
 $ yarn add @stellar/typescript-wallet-sdk
 ```
 
-#### Authenticate
+#### Step 2: Authenticate
 
 ```typescript
 import { Wallet, SigningKeypair } from "@stellar/typescript-wallet-sdk";
@@ -204,7 +208,7 @@ const authKey = SigningKeypair.fromSecret(AUTH_SECRET_KEY);
 const authToken = await sep10.authenticate({ accountKp: authKey });
 ```
 
-#### Initiate a Transaction
+#### Step 3: Initiate a Transaction
 
 ```typescript
 const assetCode = "USDC";
@@ -248,7 +252,7 @@ After successfully getting the URL, the webpage content will look like this:
 
 <Image align="center" border={true} src="https://files.readme.io/6d3020e222948c0a05d620b8dc6ac252fd19ea512a993c6f74f0027ebb1348dc-16d26c2434fe444809880c6249c574d2a794ae9ab1d79afd11f4d96695340012-Harbor_Status_flow-_2_.jpg" className="border" />
 
-#### Binding transaction status has changed
+#### Step 4: Poll the Transaction Status
 
 When a user completes a transaction on the interface provided by **OwlPay Harbor**, the transaction status is updated by OwlPay Harbor. To retrieve the latest status, the application must perform **polling** to check for updates.
 
@@ -288,7 +292,7 @@ const transaction = await anchor.sep24().getTransactionBy({
 
 ```
 
-#### Other Client SDK Examples
+#### Other Client SDKs
 
 Alternatively,  we'll show some snippets implemented code from `@stellar/stellar-sdk` , but  please check out <Anchor label="stellar-sdk docs" target="_blank" href="https://stellar.github.io/js-stellar-sdk/">stellar-sdk docs</Anchor> for more details.  Wether client-side or server-side, you may need to be signing transactions in you workflow.  This code only shows `Keypair` and `Transaction` classes, but be aware that there is much more!
 
@@ -312,7 +316,7 @@ const signedTransaction = txn.toEnvelope().toXDR('base64');
 
 <br />
 
-##### Summary
+### Summary
 
 By following these guidelines, you can ensure a seamless and secure experience for your customers during the deposit and withdrawal processes.
 

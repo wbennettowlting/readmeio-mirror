@@ -15,9 +15,13 @@ This document describes how to integrate the ACH Pull (direct bank account debit
 
 ***
 
+<br />
+
 <Callout icon="⚠️" theme="warn">
   The ACH Pull feature is currently available only to Applications registered as **US-based companies**. Your business operating location and company registered address must be located in a state where OwlPay holds a Money Transmitter License (MTL).
 </Callout>
+
+<br />
 
 > 📘 **Authorization Email Required**
 >
@@ -245,6 +249,8 @@ The response includes quotes for multiple payment methods. Select the item where
 #### Step 4: Create ACH Pull Transfer
 
 Use the `clbacc_` ID from Step 2 and the `quote_id` from Step 3 to create the transfer.
+
+<br />
 
 <Callout icon="⏳" theme="info">
   **Settlement Time Notice:** ACH Pull transfers typically settle in **T+2** business days. For more details on fund availability and payment locks, see [**Settlement and Payment Lock Time**](/docs/payment-lock-time).

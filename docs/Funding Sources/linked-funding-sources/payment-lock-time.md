@@ -37,6 +37,8 @@ During the settlement period, you can track the progress of the transaction via 
 * **Primary Status (`status`):** `pending_customer_transfer_start`
 * **Sub-Status (`sub_status`):** `awaiting_settlement`
 
+<br />
+
 <Callout icon="📘" theme="info">
   **Note on awaiting_settlement:** 
   When the transfer `sub_status` shows `awaiting_settlement`, it indicates that **we have already successfully debited/pulled the funds** from the customer's bank account (via ACH Pull) or Debit Card. The transaction is simply undergoing the standard bank clearing and settlement process.
@@ -71,6 +73,8 @@ Consider an ACH Pull transaction initiated on a **Friday**. Since weekends are n
 * **Monday (T+1):** First business day.
 * **Tuesday (T+2):** Second business day. Settlement completes.
 * **Wednesday:** Funds are fully unlocked or disbursed to an external address.
+
+<br />
 
 <Callout icon="💡" theme="info">
   **Pro Tip:** To minimize waiting time, advise users to initiate transfers early in the week or use Debit Cards for faster T+1 settlement.

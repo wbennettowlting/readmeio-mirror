@@ -17,6 +17,8 @@ The Quote API is responsible for:
 * Calculating commissions and platform fees
 * Defining expiration windows for execution
 
+<br />
+
 <Callout icon="👉" theme="info">
 
 **Direct API Reference:**

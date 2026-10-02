@@ -13,6 +13,9 @@ metadata:
 x-privacy:
   view: public
 ---
+
+<br />
+
 > 📘 Looking for Comparison?
 >
 > To understand the differences in usage and workflow between **Customer Deposit Accounts** and **Narrative-Based Transfers (On-Ramp)**, please refer to our comparison guide: [**Funding Methods: Deposit Accounts vs. Narrative-Based Transfers**](/docs/deposit-accounts-vs-narrative-transfers).
@@ -23,6 +26,8 @@ When a customer transfers fiat currency (via USD ACH Push or USD Wire Transfer) 
 1. Detects the incoming deposit.
 2. Converts the fiat amount to cryptocurrency (USDC) minus applicable fees.
 3. Transfers the stablecoin directly to the specified `destination` (either an external blockchain address or a Harbor wallet).
+
+<br />
 
 <Callout icon="👉" theme="info">
 
@@ -80,6 +85,8 @@ Before creating a deposit account, you must have a verified customer in the syst
 
 #### Step 2: Create a Deposit Account
 Create a dedicated deposit account for the customer. Currently `source_country` must be `US`. `destination.asset` is optional and defaults to `USDC`, which is the only asset supported today.
+
+<br />
 
 > 💡 **Commission Fee Support**
 > 
@@ -214,6 +221,8 @@ Once active, the `deposit_instructions` field is populated with banking details:
 }
 ```
 
+<br />
+
 > 📘 **Account-verification micro-deposits**
 > An outside bank or platform may push a few cents into this account to prove that it exists and belongs to the named holder. Those deposits are **not** on-ramped: no transfer is created, no conversion takes place, no hold is placed, and your balance does not move. You are notified through the [**`bank_account.micro_deposit.received`**](/docs/micro-deposit-verification) webhook instead. Harbor also emails a notification about the deposit — to the Customer holding the account, with your business owner copied.
 
@@ -262,6 +271,8 @@ curl --location --request PATCH 'https://harbor-sandbox.owlpay.com/api/v1/deposi
 }'
 ```
 
+<br />
+
 > 🚧 Disabling is Permanent
 >
 > Once disabled, the account **cannot be re-enabled or retargeted**. This physically deletes the virtual banking link at our provider. To resume, you must create a new deposit account.
@@ -295,6 +306,8 @@ Response (HTTP 202):
 ```
 
 This triggers the downstream flow: receiving the fiat, initiating a transfer, converting to USDC, and delivering to the defined destination address. You can trace this order status via transfer status hooks and standard transaction logs.
+
+<br />
 
 > 🚧 Planned for release in October 2026
 >

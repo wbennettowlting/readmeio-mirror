@@ -88,6 +88,8 @@ The user is guided through:
 
 ### Benefits of Hosted Link Onboarding
 
+<br />
+
 > 📘 Secure & Compliant
 > - **Zero Document Storage Liability**: You never collect or store sensitive files (like corporate certificates, bank statements, or national IDs). They go directly to Harbor's encrypted data stores.
 > - **Biometric Integration Out-of-the-Box**: Biometric face checks require complex camera controls. Our hosted page manages this securely across iOS, Android, and desktop browsers.

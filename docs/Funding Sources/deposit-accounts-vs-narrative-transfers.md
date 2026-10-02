@@ -13,6 +13,9 @@ metadata:
 x-privacy:
   view: public
 ---
+
+<br />
+
 > 📘 Regional Availability & Usage
 >
 > The detailed instructions and workflows outlined in this guide are primarily optimized for **US users (including both businesses and individuals)**. 

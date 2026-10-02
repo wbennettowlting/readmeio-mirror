@@ -11,10 +11,12 @@ OwlPay Harbor now supports cross-border transfers to multiple regions worldwide,
 
 OwlPay Harbor supports off-ramp (crypto → fiat) withdrawals to the following non-US regions and local currencies.
 
+<br />
+
 <Callout icon="📘" theme="info">
   **Supported Countries & Currencies**
 
-  Please see <Anchor label="Fiat payment methods" target="_blank" href="/docs/fiat-payment-methods">Fiat payment methods</Anchor> for the latest support roadmap.
+  Please see <Anchor label="Off-Ramp coverage" target="_blank" href="/docs/off-ramp-coverage">Off-Ramp coverage</Anchor> for the latest support roadmap.
 </Callout>
 
 ### Transfer Guides
@@ -46,6 +48,8 @@ The OwlPay Harbor Transfer API uses a two-step process to ensure real-time FX ra
 #### Step 1: Get a Quote
 
 First, call the **Quote API** to obtain an exchange rate and conversion preview:
+
+<br />
 
 <Callout icon="📘" theme="info">
   **Source Amount & Destination Amount**

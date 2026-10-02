@@ -11,11 +11,15 @@ metadata:
 
 Harbor's **Graded Onboarding (V2)** provides a frictionless, step-by-step verification flow for individual customers. Instead of requiring a complete and comprehensive KYC submission in a single, all-or-nothing call, Graded Onboarding allows your customers to onboard and transact quickly with minimal initial data, and then sequentially upgrade to higher tiers when needed.
 
+<br />
+
 <Callout icon="🚧" theme="warn">
   ### Required Step: Customer Creation First
 
   Before calling any Graded Onboarding (V2) endpoints, you **must first create an individual customer** object with `type: "individual"` via `POST /api/v1/customers`. This returns the `customer_uuid` used as the path parameter in all onboarding APIs. Please refer to our detailed [**Customer**](/docs/customers) guide for creation request and response details.
 </Callout>
+
+<br />
 
 <Callout icon="💡" theme="default">
   ### Direct Level 2 Entry Allowed
@@ -51,6 +55,8 @@ Before integrating, determine which onboarding flow is right for your applicatio
 | **Submission Model** | All-or-nothing (Full KYC collected upfront)                                      | Incremental (Level 1 → Level 2 → Level 3)                                                |
 | **Typical Use Case** | When full, standard individual or corporate verification is required at sign-up. | When you want to "start light" with a low friction sign-up process (Level 1 is US-only). |
 
+<br />
+
 <Callout icon="📘" theme="info">
   ### Customer Scheme Isolation
 
@@ -60,6 +66,8 @@ Before integrating, determine which onboarding flow is right for your applicatio
 
   The response will contain either `"kyc_scheme": "v1"` or `"kyc_scheme": "v2"`.
 </Callout>
+
+<br />
 
 <Callout icon="📘" theme="info">
   ### Looking for Standard Onboarding (V1)?
@@ -73,6 +81,8 @@ Before integrating, determine which onboarding flow is right for your applicatio
 
 The Graded Onboarding flow assigns individual customers to one of three progressive levels (Level 1, Level 2, or Level 3). Each level has its own residential criteria, required document parts, transaction limits, and supported fiat payment methods.
 
+<br />
+
 <Callout icon="📘" theme="info">
   ### Detailed Level & Limits Guide
 
@@ -85,7 +95,7 @@ The Graded Onboarding flow assigns individual customers to one of three progress
 
 To avoid duplicate configurations, please refer to our standard integration guidelines:
 
-* **Environments & Authentication:** See [**Authentication**](/docs/authentication) for Base URLs, authentication headers (`X-API-KEY`), and the `Idempotency-Key` requirement.
+* **Environments & Authentication:** See [**API Keys**](/docs/api-keys) for Base URLs, authentication headers (`X-API-KEY`), and the `Idempotency-Key` requirement.
 * **Customer Creation:** Before calling any Graded Onboarding endpoint, you must first create an individual customer with `type: "individual"`. Please refer to our detailed [**Customer**](/docs/customers) guide for request and response examples for `POST /api/v1/customers`.
 * **Reference-Data Lookups:** Some input fields (such as state codes, occupations, and identity document types) only accept dynamically validated options, and guessing them does not work. Call the lookup APIs documented in [**Onboarding Meta APIs**](/docs/onboarding-lookups):
 
@@ -197,6 +207,8 @@ Response: **202 Accepted** with a status of `processing`.
 * `residence.state` must be **omitted** outside the US. It is rejected, not merely optional.
 * Send `tax_id`, not `ssn`. Sending `ssn` for a non-US residence is rejected — see [**Customer Level**](/docs/customer-levels) for the full tax-identifier rules.
 
+<br />
+
 <Callout icon="📘" theme="info">
   ### Accepted Values for Fixed-Choice Fields
 
@@ -206,6 +218,8 @@ Response: **202 Accepted** with a status of `processing`.
 
   `occupation` — slugs only, from `GET /api/v2/customers/individual/occupations`. An unrecognised slug is always rejected.
 </Callout>
+
+<br />
 
 <Callout icon="🚧" theme="warn">
   ### Fields From The (V1) Contract Are Rejected, Not Ignored
@@ -246,6 +260,8 @@ The response JSON shape contains a top-level `status`:
 | `verified`        | Selected level is successfully approved.                                                                                                                             | Customer is active at this level.                                                                 |
 | `declined`        | **Final.** A verdict was issued on the person. No resubmission of any kind is accepted.                                                                              | Stop. Do not resubmit — every further attempt returns **409** (`declined_is_final`, code `2312`). |
 | `failed`          | Systemic or document processing error.                                                                                                                               | Resend with **PATCH** on the same path.                                                           |
+
+<br />
 
 <Callout icon="🚧" theme="warn">
   ### `action_required` vs. `declined`
@@ -308,6 +324,8 @@ curl -X PATCH "https://harbor-sandbox.owlpay.com/api/v2/customers/{{customer_uui
   }'
 ```
 
+<br />
+
 <Callout icon="🚨" theme="default">
   ### Critical Rule for PATCH
 
@@ -315,6 +333,8 @@ curl -X PATCH "https://harbor-sandbox.owlpay.com/api/v2/customers/{{customer_uui
 
   _Note: You cannot change the target&#x20;_`kyc_level`_&#x20;using PATCH; it is locked to the level of the initial submission. A different level is a different application, not a correction — use the upgrade endpoint instead._
 </Callout>
+
+<br />
 
 <Callout icon="📘" theme="info">
   ### Once An Onboarding Exists, PATCH Is The Only Way To Resend

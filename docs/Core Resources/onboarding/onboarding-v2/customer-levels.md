@@ -68,11 +68,15 @@ Onboarding tiers dynamically control both the allowed **fiat payment methods** a
 | **Level 2** | $9,999 | $9,999 | $299,970 | No Ceiling | Any offered method (e.g., ACH, Wire, RTP, Debit) |
 | **Level 3** | No Ceiling | $50,000 (default) | $1,000,000 (default) | No Ceiling | Any offered method (e.g., ACH, Wire, RTP, Debit) |
 
+<br />
+
 > ℹ️ *Note on Level 3 Limits*
 > 
 > The Level 3 figures above are **starting defaults**. Level 3 is the one level whose limits compliance adjusts per customer, case by case, based on the customer's financial profile, transaction history, and platform requirements.
 > 
 > Level 3 is **not unlimited**. A case-by-case daily limit is set within **$1,000 – $250,000**, and a monthly limit within **$10,000 – $5,000,000**.
+
+<br />
 
 > 📘 On-Ramp and Off-Ramp Accumulate Separately
 > 

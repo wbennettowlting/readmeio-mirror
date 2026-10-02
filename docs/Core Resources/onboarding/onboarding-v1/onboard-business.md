@@ -535,6 +535,8 @@ curl -X PATCH "https://harbor-sandbox.owlpay.com/api/v1/customers/{{customer_uui
 
 The response is `202`; the onboarding goes back to `processing` and is automatically re-checked.
 
+<br />
+
 > 📘 Rules for PATCH
 >
 > * Allowed **only** while status is `action_required`.

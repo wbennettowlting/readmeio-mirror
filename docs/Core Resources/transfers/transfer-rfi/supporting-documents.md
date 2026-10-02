@@ -6,6 +6,8 @@ metadata:
 x-privacy:
   view: anyone_with_link
 ---
+<br />
+
 > 📘 Why Supporting Documents Are Needed?
 >
 > When transferring funds to certain countries, local regulations may require additional documentation to verify the purpose or legitimacy of the transaction. To comply with these regulations, Harbor allows you to attach a supporting document directly when initiating a transfer.

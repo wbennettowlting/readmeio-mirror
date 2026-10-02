@@ -8,6 +8,8 @@ x-privacy:
 ---
 When a customer passes KYB/KYC verification, when there is a transfer status update, or when an account-verification micro-deposit lands on one of your deposit accounts, we will send a webhook notification to the server URL you specified. The payload will contain the following data structures:
 
+<br />
+
 > 📘 Please [**Verify the signature of the Webhook Request Header**](/docs/verify-signatures)
 
 <br />
@@ -16,9 +18,15 @@ When a customer passes KYB/KYC verification, when there is a transfer status upd
 
 Sent as `bank_account.micro_deposit.received` when an account-verification micro-deposit lands on a deposit account Harbor issued for you. An outside bank or platform pushes a few cents in to prove the account exists and belongs to the named holder, then asks you to report the amount it sent. When and why it fires is documented in [**Account-verification micro-deposits**](/docs/micro-deposit-verification).
 
+<br />
+
 > 🚧 This payload is **not** wrapped in a `data` object. Unlike the examples above, `object`, `event` and the deposit fields all sit at the top level of the request body.
 
+<br />
+
 > 📘 Harbor also emails a notification for the same deposit, so your customer may hear about it before your integration does. See [**Account-verification micro-deposits**](/docs/micro-deposit-verification) for who receives it.
+
+<br />
 
 > 📘 A micro-deposit is never on-ramped. It does not create a transfer, is not converted, places no hold, and never moves your balance. This event is the only notice you receive.
 

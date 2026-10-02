@@ -64,6 +64,8 @@ Simulates the scenario where the customer has paid into the designated receiving
 * **ACH Pull & Debit Card (On-Ramp):** These methods automatically simulate pull funding in the Sandbox environment, bypassing this step.
 * **Off-Ramp & Swap (On-Chain):** These methods require real testnet USDC transfers. Manual simulation is not supported.
 
+<br />
+
 <Callout icon="⚠️" theme="warning">
   If you attempt to call this API for ACH Pull or Debit Card, you will receive an error indicating that simulation is not applicable because it is automated. For Off-Ramp or Swap, you will receive an error directing you to use the Claim Testnet USDC API instead.
 </Callout>

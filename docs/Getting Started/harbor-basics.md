@@ -28,6 +28,8 @@ Before you can execute transfers on behalf of a Customer, the Customer must comp
 
 Due to compliance requirements Harbor manages this verification process, which we refer to as **Onboarding**.
 
+<br />
+
 <Accordion title="Can I be a Customer of my own application?" icon="fa-solid fa-message-question">
 Yes. If your organization also wants to process transfers through Harbor, you can onboard your organization as a **Business Customer** within your own application and initiate the **KYB** onboarding process.
 
@@ -38,6 +40,7 @@ Yes. If your organization also wants to process transfers through Harbor, you ca
 
 Before transfers can be initiated on behalf of a Customer, the Customer must complete the required **Onboarding** process.
 
+<br />
 
 <Callout icon="📘" theme="info">
   #### Sandbox vs. Production
@@ -59,6 +62,8 @@ After accepting the agreement, the Customer provides the information required fo
 
 Harbor uses this information to complete the required KYC or KYB verification.
 
+<br />
+
 <Accordion title="Can I submit customer information through the API?" icon="fa-solid fa-message-question">
 Yes. Customer information can be submitted either through the **hosted link page** using the provided forms or programmatically through the **Harbor API** using the available endpoints.
 </Accordion>
@@ -68,7 +73,7 @@ Yes. Customer information can be submitted either through the **hosted link page
 
 **Transfers** can be initiated on behalf of a customer, whether an individual or a business, once their onboarding is complete. A transfer can be an on-ramp, an off-ramp, or an on-chain transfer.
 
-The transfer process has three main steps.
+The transfer process has four main steps.
 
 **Step 1: Create a quote**
 
@@ -76,8 +81,12 @@ Create a quote by gathering the source, the destination, and the commission for 
 
 **Step 2: Obtain the transfer requirements**
 
-Once the quote is created, obtain the requirements needed to complete the transfer.
+Once the quote is created, obtain the requirements needed to complete the transfer. Requirements are dynamic: the fields a transfer needs depend on its corridor and payment method. For example, a USD wire to Mexico needs different recipient and bank details than a payout in Hong Kong. Fetching the requirements for each quote tells you exactly what to collect for that transfer.
 
 **Step 3: Execute the transfer**
 
 Execute the transfer using the quote and the transfer requirements from Step 2.
+
+**Step 4: Complete the transfer instructions**
+
+Once the transfer is created, the response includes the transfer instructions: where and how the Customer sends the funds, and the deadline for sending them. Harbor processes the transfer only after the Customer completes these instructions.

@@ -32,6 +32,8 @@ Harbor supports two ways for your customers to fund on-ramp transfers directly f
 | **Transaction Limits** | No per-transaction limit        | Per-transaction, daily, weekly, monthly limits |
 | **Settlement Period**  | T+2 (Business Days)             | T+1 (Business Day)                             |
 
+<br />
+
 <Callout icon="📋" theme="info">
   For the complete list of supported card networks, card types, and country coverage, please refer to the [**Debit Card Support Coverage**](/docs/debit-card-coverage) guide.
 </Callout>

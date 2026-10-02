@@ -17,6 +17,8 @@ x-privacy:
 ---
 The Harbor Customers API allows you to get KYC link for Customer, enabling you to manage the verification process independently. This API provides flexibility in handling customer interactions.
 
+<br />
+
 <Callout icon="👉" theme="info">
 
 **Direct API Reference:**
@@ -32,6 +34,8 @@ You are now ready to start using Harbor’s core APIs.
 The first step is to create a customer object, which represents a user in your system.
 
 When making this request, ensure you include the required headers as shown in the example below. Most importantly, you must pass the **X-API-KEY** to authenticate the request.
+
+<br />
 
 > ⚠️ Key Requirements
 >

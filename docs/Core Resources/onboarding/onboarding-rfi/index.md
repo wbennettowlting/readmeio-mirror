@@ -81,6 +81,8 @@ To resolve the outstanding issues, collect the corrected values from your user a
 
 For business onboarding (V1), the payload must re-submit `company`, `associated_persons`, and `company_files`. For individual onboarding (V2), submit the updated `individual` data. 
 
+<br />
+
 > ⚠️ Important Integration Rule for PATCH
 > 
 > The `PATCH` payload completely replaces the stored onboarding data. You **must resend all required fields**, not just the fields being modified. 

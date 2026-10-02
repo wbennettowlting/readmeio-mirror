@@ -221,26 +221,37 @@ curl -X POST 'https://harbor-sandbox.owlpay.com/api/v1/applications/faucet' \
 
 ### FAQ
 
-**Q: How long does it take to receive the funds?**
-Testnet payouts typically arrive within a few seconds to a minute, depending on the chain's block confirmation time.
+<br />
 
-**Q: When does the daily quota reset?**
-At midnight UTC each day. Each chain/currency combination's quota is tracked independently.
+<Accordion title="How long does it take to receive the funds?" icon="fa-solid fa-message-question">
+  Testnet payouts typically arrive within a few seconds to a minute, depending on the chain's block confirmation time.
+</Accordion>
 
-**Q: Can I claim 500 USDC on Ethereum AND 500 USDT on Ethereum in the same day?**
-Yes. The 500 daily limit applies per chain **and** per currency, so USDC and USDT on the same chain don't share a quota.
+<Accordion title="When does the daily quota reset?" icon="fa-solid fa-message-question">
+  At midnight UTC each day. Each chain/currency combination's quota is tracked independently.
+</Accordion>
 
-**Q: What happens if a payout fails?**
-You will receive a `7003` (USDC) or `7006` (USDT) error. The amount is **not** deducted from your daily quota if the payout fails. Retry the request.
+<Accordion title="Can I claim 500 USDC on Ethereum AND 500 USDT on Ethereum in the same day?" icon="fa-solid fa-message-question">
+  Yes. The 500 daily limit applies per chain **and** per currency, so USDC and USDT on the same chain don't share a quota.
+</Accordion>
 
-**Q: Can I use the same wallet address across multiple chains?**
-Yes, for EVM-compatible chains (Ethereum, Polygon, Arbitrum, Avalanche, Optimism, Base) you can use the same `0x` address. Stellar and Solana require their native address formats.
+<Accordion title="What happens if a payout fails?" icon="fa-solid fa-message-question">
+  You will receive a `7003` (USDC) or `7006` (USDT) error. The amount is **not** deducted from your daily quota if the payout fails. Retry the request.
+</Accordion>
 
-**Q: When should I use `address_tag`?**
-Only for chains that use memos/tags (e.g. Stellar). Do not send it for chains that do not support tags — the request will be rejected.
+<Accordion title="Can I use the same wallet address across multiple chains?" icon="fa-solid fa-message-question">
+  Yes, for EVM-compatible chains (Ethereum, Polygon, Arbitrum, Avalanche, Optimism, Base) you can use the same `0x` address. Stellar and Solana require their native address formats.
+</Accordion>
 
-**Q: Is there a rate limit on API calls (beyond the daily quota)?**
-The standard OwlPay API rate limits apply. There is no additional per-minute throttle specific to the faucet endpoint.
+<Accordion title="When should I use address_tag?" icon="fa-solid fa-message-question">
+  Only for chains that use memos/tags (e.g. Stellar). Do not send it for chains that do not support tags — the request will be rejected.
+</Accordion>
+
+<Accordion title="Is there a rate limit on API calls (beyond the daily quota)?" icon="fa-solid fa-message-question">
+  The standard OwlPay API rate limits apply. There is no additional per-minute throttle specific to the faucet endpoint.
+</Accordion>
+
+<br />
 
 <Callout icon="📘" theme="info">
   **Legacy endpoint:** `POST /api/v1/applications/faucet/usdc` (USDC only, all chains above) remains available for existing integrations and behaves exactly as before. New integrations should use the unified `/api/v1/applications/faucet` endpoint above, which also supports USDT.

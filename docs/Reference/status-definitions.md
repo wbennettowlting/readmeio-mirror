@@ -5,9 +5,9 @@ metadata:
 x-privacy:
   view: public
 ---
-### Status Definitions
+### Customer Status
 
-#### Customer Status
+The `status` field on the Customer object shows where the Customer is in the onboarding and verification process.
 
 | **Status**                  | **Description**                                                                                                                               |
 | :-------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -29,7 +29,7 @@ x-privacy:
 
 <br />
 
-#### Customer State
+### Customer State
 
 The `state` field is a higher-level, customer-facing status derived from the underlying internal customer `status`. Providing the `state` field in the Customer object makes it much easier to understand the current onboarding and integration status at a glance. It simplifies integration by grouping internal status details into actionable states.
 
@@ -53,7 +53,9 @@ The `state` field is a higher-level, customer-facing status derived from the und
 
 <br />
 
-#### Transfer Status
+### Transfer Status
+
+The `status` field on the Transfer object shows where the transfer is in its lifecycle, from waiting for the Customer's funds to completion.
 
 | **Status**                             | **Description**                                                                                                                                                                                                                                                            |
 | :------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -73,7 +75,7 @@ The `state` field is a higher-level, customer-facing status derived from the und
 
 <br />
 
-#### Transfer Sub-Status
+### Transfer Sub-Status
 
 The `sub_status` field provides a more granular state explanation within a primary `status`. This is particularly useful for tracking transactions that are undergoing multi-step clearing or bank settlement processes (such as ACH Pull or Debit Card transfers).
 

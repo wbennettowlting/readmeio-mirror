@@ -28,6 +28,8 @@ This guide provides a comprehensive overview and API reference for managing webh
 * [**Update a notification subscription**](/docs/subscription-apis#update-a-notification-subscription): Modify existing webhook subscriptions, such as changing their name or enabling/disabling them.
 * [**Delete a notification subscription**](/docs/subscription-apis#delete-a-notification-subscription): Remove a webhook subscription using its unique identifier.
 
+<br />
+
 <Callout icon="👉" theme="info">
 
 **Direct API Reference:**

@@ -8,6 +8,8 @@ x-privacy:
 ---
 Convert stablecoin (e.g., USDC) into fiat currency (e.g., USD, HKD) and deliver it to a recipient's bank account.
 
+<br />
+
 <Callout icon="👉" theme="info">
 
 **Direct API Reference:**
