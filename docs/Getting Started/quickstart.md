@@ -104,7 +104,7 @@ Note that `state` is `onboarding_needed`: the Customer can't transact until onbo
 
 Before you can create transfers for a Customer, the Customer must complete **Onboarding**. Onboarding has two main steps, and the Customer response above already includes the link for each.
 
-**Step 1: Accept the agreement**
+#### Step 1: Accept the agreement
 
 Send the Customer the `agreement_link` from the response so they can review and accept the service agreement. The `has_signed_agreement` field shows whether they have accepted it.
 
@@ -114,7 +114,7 @@ Send the Customer the `agreement_link` from the response so they can review and 
 
 
 
-**Step 2: Provide information**
+#### Step 2: Provide information
 
 Next, send the Customer the `kyc_link`. The Customer uses it to submit the information Harbor needs for KYC (individuals) or KYB (businesses) verification.
 
@@ -136,7 +136,7 @@ Once the Customer is verified, you can create **transfers** for them. A transfer
 
 Each transfer takes three API calls.
 
-**Step 1: Create a quote**
+#### Step 1: Create a quote
 
 Request a quote with the source, the destination, and the commission for the transfer. The response includes a `quote_id`. See [**Quotes**](/docs/quotes).
 
@@ -222,7 +222,7 @@ The endpoint returns a list of available quotes:
 * `fees`: the fees applied to the transfer, including your `COMMISSION_FEE`.
 * `quote_expire_date`: the time the quote expires. Create the transfer before then.
 
-**Step 2: Obtain the transfer requirements**
+#### Step 2: Obtain the transfer requirements
 
 Use the `quote_id` to fetch the transfer requirements. The response is a JSON Schema describing the exact payload the transfer needs. See [**Transfer JSON Schema**](/docs/transfer-json-schema).
 
@@ -296,7 +296,7 @@ The endpoint returns a JSON Schema that lists the fields the transfer needs. A s
 
 Use the full schema to build and validate the transfer payload in Step 3.
 
-**Step 3: Execute the transfer**
+#### Step 3: Execute the transfer
 
 Create the transfer with the `quote_id` and a payload that matches the schema from Step 2.
 
@@ -431,7 +431,7 @@ The endpoint returns the newly created transfer:
 
 <br />
 
-**Step 4: Follow the transfer instructions**
+#### Step 4: Follow the transfer instructions
 
 Send the USDC to the address in `transfer_instructions`. Because this example uses the sandbox environment, you send testnet USDC on the Ethereum testnet, not real funds. Send `132.11` USDC (`source.amount`) on `ethereum` (`instruction_chain`) to `0x547a3a390e2b3e47404303a2b5997d7bcbfa20a6` (`instruction_address`) before `crypto_pay_in_expired_at`.
 
@@ -448,7 +448,8 @@ curl --location --request GET 'https://harbor-sandbox.owlpay.com/api/v2/transfer
 
 The `status` field moves on from `pending_customer_transfer_start` as Harbor receives the USDC and pays out the USD to the recipient's bank account.
 
-### Congratulations!
+
+**Congratulations!**
 
 You've created a Customer, onboarded them, and completed an off-ramp transfer from USDC to USD in the sandbox. To learn more about each part of the Harbor API, including Customers, Onboarding, Transfers, Webhooks, and Wallets, see [**Core Resources**](/docs/core-resources-overview).
 
