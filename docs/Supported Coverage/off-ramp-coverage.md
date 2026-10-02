@@ -190,4 +190,4 @@ Some payment methods are only available for certain sender and recipient types:
 
 For local currency payouts such as HKD, SGD, MXN, and BRL, see [**Local Currency Transfers**](/docs/local-currency-transfers). For debit card payouts, see [**Debit Card Coverage**](/docs/debit-card-coverage).
 
-Limits and supported pairs can vary by application. See [**Limits and Live Coverage**](/docs/limits-and-live-coverage) to retrieve your exact settings.
+Limits and supported pairs can vary by application. See [**Withdrawal Settings**](/docs/withdrawal-settings) to retrieve your exact settings.

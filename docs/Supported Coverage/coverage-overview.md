@@ -20,7 +20,7 @@ See [**Stablecoins and Blockchains**](/docs/stablecoins-and-blockchains) for blo
 
 ### Limits
 
-The pages in this section give a general overview. Exact limits and supported currency pairs depend on your application's configuration. See [**Limits and Live Coverage**](/docs/limits-and-live-coverage) to retrieve them through the API.
+The pages in this section give a general overview. Exact limits and supported currency pairs depend on your application's configuration. See [**Withdrawal Settings**](/docs/withdrawal-settings) to retrieve them through the API.
 
 <br />
 

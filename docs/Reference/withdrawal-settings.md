@@ -8,6 +8,8 @@ x-privacy:
 ---
 This API allows developers to retrieve the current withdrawal configurations supported for your application. You can use this endpoint to identify supported **currency pairs**, **destination countries**, **types (Individual/Business)**, and their respective **transaction limits**.
 
+The [**Supported Coverage**](/docs/coverage-overview) pages give a general overview. Exact limits (min/max) and supported currency pairs depend on your application's configuration and on the sender and recipient types (individual or business), so use this API to get the settings that apply to your integration.
+
 ### Endpoint
 
 `GET` `/api/v2/transfers/withdrawal_settings`
